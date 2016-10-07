@@ -1,4 +1,5 @@
 node_modules/
+%USERPROFILE%/
 build
 .DS_Store
 *.tgz
