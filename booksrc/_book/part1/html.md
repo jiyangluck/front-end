@@ -1,4 +1,4 @@
-## html基础
+## html基础~~
 
 ### DEMO01：创建第一个html文件
 在sublime text中新建一个文件，保存成index.html,然后输入“!”，在按tab键，就可以生成一个最基本的html模板，生成后代码如下
