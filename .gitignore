@@ -2,6 +2,7 @@ node_modules/
 %USERPROFILE%/
 build
 .DS_Store
+.publish/
 *.tgz
 my-app*
 template/src/__tests__/__snapshots__/
