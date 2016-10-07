@@ -4,6 +4,6 @@ build
 .DS_Store
 .publish/
 *.tgz
-_book/
+booksrc/_book/
 my-app*
 template/src/__tests__/__snapshots__/
