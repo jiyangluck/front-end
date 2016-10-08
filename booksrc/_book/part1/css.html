@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="layout.html" />
+    <link rel="next" href="display.html" />
     
     
     <link rel="prev" href="html.html" />
@@ -120,7 +120,7 @@
                 <a href="./">
             
                     
-                    html和css基础
+                    一、html和css基础
             
                 </a>
             
@@ -155,12 +155,51 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="layout.html">
+        <li class="chapter " data-level="1.3.3" data-path="display.html">
+            
+                <a href="display.html">
+            
+                    
+                    3-元素分类与元素浮动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="box.html">
+            
+                <a href="box.html">
+            
+                    
+                    4-盒子模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="tree.html">
+            
+                <a href="tree.html">
+            
+                    
+                    5-树状结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="layout.html">
             
                 <a href="layout.html">
             
                     
-                    3-网页布局基础
+                    6-网页布局基础
             
                 </a>
             
@@ -178,7 +217,7 @@
                 <a href="../part2/">
             
                     
-                    网页制作
+                    二、网页制作
             
                 </a>
             
@@ -236,7 +275,7 @@
                 <a href="../part3/">
             
                     
-                    jQuery基础
+                    三、jQuery基础
             
                 </a>
             
@@ -281,7 +320,7 @@
                 <a href="../part4/">
             
                     
-                    javascript基础（一）
+                    四、javascript基础（一）
             
                 </a>
             
@@ -378,7 +417,7 @@
                 <a href="../part5/">
             
                     
-                    javascript基础（二）
+                    五、javascript基础（二）
             
                 </a>
             
@@ -423,7 +462,7 @@
                 <a href="../part6/">
             
                     
-                    前后台数据交互
+                    六、前后台数据交互
             
                 </a>
             
@@ -481,7 +520,7 @@
                 <a href="../part7/">
             
                     
-                    html5和css3基础
+                    七、html5和css3基础
             
                 </a>
             
@@ -539,7 +578,7 @@
                 <a href="../part8/">
             
                     
-                    前端开发常用工具
+                    八、前端开发常用工具
             
                 </a>
             
@@ -625,7 +664,26 @@
                                 <section class="normal markdown-section">
                                 
                                 <h2 id="2-css&#x57FA;&#x7840;">2-css&#x57FA;&#x7840;</h2>
-<h3 id="demo01css&#x9009;&#x62E9;&#x5668;">DEMO01:css&#x9009;&#x62E9;&#x5668;</h3>
+<p>&#x5BF9;&#x4E8E;&#x521D;&#x5B66;&#x8005;&#x6765;&#x8BF4;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x5C06;css&#x5199;&#x5728;html&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;head&#x6807;&#x7B7E;&#x4E0B;&#x7684;script&#x6807;&#x7B7E;&#x5185;&#xFF0C;css&#x8BED;&#x6CD5;</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span>&gt;</span><span class="undefined">
+        //css&#x4E66;&#x5199;&#x4F4D;&#x7F6E;
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>&#x77E5;&#x9053;&#x4E86;&#x6837;&#x5F0F;&#x4E66;&#x5199;&#x4F4D;&#x7F6E;&#xFF0C;&#x90A3;&#x7528;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x8BED;&#x6CD5;&#x6765;&#x8BBE;&#x7F6E;&#x6837;&#x5F0F;&#x5462;</p>
+<pre><code>&#x9009;&#x62E9;&#x5668;{
+    &#x5C5E;&#x6027;&#x540D;:&#x5C5E;&#x6027;&#x503C;
+}
+</code></pre><h4 id="demo01css&#x9009;&#x62E9;&#x5668;">DEMO01:css&#x9009;&#x62E9;&#x5668;</h4>
 <p>&#x9996;&#x5148;&#x5E94;&#x8BE5;&#x5B66;&#x4F1A;&#x4F7F;&#x7528;&#x6700;&#x5E38;&#x7528;&#x7684;&#x96C6;&#x4E2D;&#x9009;&#x62E9;&#x5668;</p>
 <ul>
 <li>id&#x9009;&#x62E9;&#x5668;</li>
@@ -642,6 +700,19 @@
 </code></pre>
 </li>
 </ul>
+<h4 id="demo02css&#x5E38;&#x7528;&#x5C5E;&#x6027;">DEMO02:css&#x5E38;&#x7528;&#x5C5E;&#x6027;</h4>
+<p>&#x521A;&#x624D;&#x7684;&#x4F8B;&#x5B50;&#x4F7F;&#x7528;&#x4E86;color&#x5C5E;&#x6027;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x6587;&#x5B57;&#x7684;&#x989C;&#x8272;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x4ECB;&#x7ECD;&#x66F4;&#x591A;&#x5E38;&#x7528;&#x7684;&#x5C5E;&#x6027;</p>
+<pre><code class="lang-css"><span class="hljs-selector-id">#id</span>{
+    <span class="hljs-attribute">color</span>:red;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;
+    <span class="hljs-attribute">width</span>:<span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">height</span>:<span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#eee</span>;
+}
+</code></pre>
 
                                 
                                 </section>
@@ -674,7 +745,7 @@
                 </a>
                 
                 
-                <a href="layout.html" class="navigation navigation-next " aria-label="Next page: 3-网页布局基础">
+                <a href="display.html" class="navigation navigation-next " aria-label="Next page: 3-元素分类与元素浮动">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -685,7 +756,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2-css基础","level":"1.3.2","depth":2,"next":{"title":"3-网页布局基础","level":"1.3.3","depth":2,"path":"part1/layout.md","ref":"part1/layout.md","articles":[]},"previous":{"title":"1-html基础","level":"1.3.1","depth":2,"path":"part1/html.md","ref":"part1/html.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part1/css.md","mtime":"2016-10-07T13:07:57.995Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-10-07T15:20:18.383Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2-css基础","level":"1.3.2","depth":2,"next":{"title":"3-元素分类与元素浮动","level":"1.3.3","depth":2,"path":"part1/display.md","ref":"part1/display.md","articles":[]},"previous":{"title":"1-html基础","level":"1.3.1","depth":2,"path":"part1/html.md","ref":"part1/html.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part1/css.md","mtime":"2016-10-08T02:17:11.653Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-10-08T02:27:19.576Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
