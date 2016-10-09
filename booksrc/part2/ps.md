@@ -1,2 +1,2 @@
-# 2-Photoshop基础
+# 第2节:Photoshop基础
 

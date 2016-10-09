@@ -1,4 +1,4 @@
-## 2-css基础
+## 第2节：css基础
 对于初学者来说，我们先将css写在html文件中，head标签下的script标签内，css语法
 ``` html
 <!DOCTYPE html>

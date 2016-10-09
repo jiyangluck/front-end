@@ -1,4 +1,4 @@
-# jQuery基础
+# 第3章:jQuery基础
 本节目标：
 * 熟练使用jQuery选择器获取节点
 * 熟练使用常用的jQuery方法
