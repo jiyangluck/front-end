@@ -36,4 +36,5 @@
 * [8-前端开发常用工具](part8/README.md)
     * [8-1-git工具的使用](part8/git.md)
     * [8-2-在github上发布你的静态网站](part8/github.md)
+    * [8-3-gulp入门](part8/gulp.md)
 
