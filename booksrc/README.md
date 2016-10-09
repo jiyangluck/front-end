@@ -8,7 +8,7 @@
 * 本视频腾讯课堂地址：[链接]()
 * 博易科技公共号：关注公共号课在第一时间获取教学信息
 
-![Alt text](https://avatars2.githubusercontent.com/u/22658271?v=3&s=466)
+![二维码](https://github.com/jiyangluck/front-end/blob/master/example/images/weixin.jpg?raw=true)
 
 
 ## 问答
