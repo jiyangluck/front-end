@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="bom.html" />
+    <link rel="next" href="window.html" />
     
     
     <link rel="prev" href="./" />
@@ -360,7 +360,7 @@
                 <a href="../part4/array.html">
             
                     
-                    4-4-数组
+                    4-4-日期和数学对象
             
                 </a>
             
@@ -368,25 +368,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.5" data-path="../part4/array.html">
+        <li class="chapter " data-level="1.6.5" data-path="../part4/flow.html">
             
-                <a href="../part4/array.html">
-            
-                    
-                    4-5-日期和数学对象
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.6" data-path="../part4/regexp.html">
-            
-                <a href="../part4/regexp.html">
+                <a href="../part4/flow.html">
             
                     
-                    4-6-正则表达式
+                    4-5-语句流
             
                 </a>
             
@@ -426,12 +413,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.2" data-path="bom.html">
+        <li class="chapter " data-level="1.7.2" data-path="window.html">
             
-                <a href="bom.html">
+                <a href="window.html">
             
                     
-                    5-2-BOM基础
+                    5-2-window对象
             
                 </a>
             
@@ -521,7 +508,7 @@
                 <a href="../part7/html5.html">
             
                     
-                    7-1-html5新特性
+                    7-1-html5，css3新特性
             
                 </a>
             
@@ -529,12 +516,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.2" data-path="../part7/css3.html">
+        <li class="chapter " data-level="1.9.2" data-path="../part7/animate.html">
             
-                <a href="../part7/css3.html">
+                <a href="../part7/animate.html">
             
                     
-                    7-2-css3新特性
+                    7-2-css3动画
             
                 </a>
             
@@ -542,12 +529,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.3" data-path="../part7/animate.md">
+        <li class="chapter " data-level="1.9.3" data-path="../part7/mobile.html">
             
-                <span>
+                <a href="../part7/mobile.html">
             
                     
-                    7-3-css3动画
+                    7-3-移动端页面制作
             
                 </a>
             
@@ -663,7 +650,23 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x7B2C;2&#x8282;window&#x5BF9;&#x8C61;">&#x7B2C;2&#x8282;:window&#x5BF9;&#x8C61;</h2>
+                                <h2 id="&#x7B2C;1&#x8282;dom&#x57FA;&#x7840;">&#x7B2C;1&#x8282;:DOM&#x57FA;&#x7840;</h2>
+<p>&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x505A;&#x7684;&#x83B7;&#x53D6;&#x8282;&#x70B9;&#x548C;&#x64CD;&#x4F5C;&#x8282;&#x70B9;&#x7684;&#x5DE5;&#x4F5C;&#x90FD;&#x662F;&#x901A;&#x8FC7;jQuery&#x5B8C;&#x6210;&#x7684;&#xFF0C;&#x90A3;jQuery&#x5E93;&#x4F18;&#x52BF;&#x5982;&#x4F55;&#x83B7;&#x53D6;&#x548C;&#x64CD;&#x4F5C;&#x8282;&#x70B9;&#x7684;&#x5462;&#xFF1F;&#x7B54;&#x6848;&#x662F;DOM&#x3002;</p>
+<p>DOM&#x4E3A;&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x5957;&#x65B9;&#x6CD5;&#x548C;&#x5C5E;&#x6027;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x4F9D;&#x8D56;jQuery&#xFF0C;&#x54EA;&#x513F;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;DOM&#x6765;&#x83B7;&#x53D6;&#x548C;&#x64CD;&#x4F5C;&#x8282;&#x70B9;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x7ED9;&#x5927;&#x5BB6;&#x4ECB;&#x7ECD;&#x5982;&#x679C;&#x4F7F;&#x7528;DOM&#x63D0;&#x4F9B;&#x7684;&#x63A5;&#x53E3;&#x3002;</p>
+<h4 id="&#x83B7;&#x53D6;&#x8282;&#x70B9;">&#x83B7;&#x53D6;&#x8282;&#x70B9;</h4>
+<pre><code class="lang-js"><span class="hljs-comment">//&#x901A;&#x8FC7;id&#x83B7;&#x53D6;</span>
+<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;id&quot;</span>);
+<span class="hljs-comment">//&#x901A;&#x8FC7;class&#x83B7;&#x53D6;</span>
+<span class="hljs-built_in">document</span>.getElementsByClassName(<span class="hljs-string">&quot;class&quot;</span>);
+<span class="hljs-comment">//&#x901A;&#x8FC7;&#x5143;&#x7D20;&#x83B7;&#x53D6;</span>
+<span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&quot;element&quot;</span>);
+<span class="hljs-comment">//&#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5668;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x5982;&#x679C;&#x9009;&#x62E9;&#x5668;&#x83B7;&#x53D6;&#x591A;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x90A3;&#x4E48;&#x627E;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;</span>
+<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#id&quot;</span>);
+<span class="hljs-comment">//&#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5668;&#x83B7;&#x53D6;&#x591A;&#x4E2A;&#x5143;&#x7D20;</span>
+<span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&quot;.class&quot;</span>);
+</code></pre>
+<h4 id="&#x7ED1;&#x5B9A;&#x4E8B;&#x4EF6;">&#x7ED1;&#x5B9A;&#x4E8B;&#x4EF6;</h4>
+<h4 id="&#x6539;&#x53D8;&#x6837;&#x5F0F;">&#x6539;&#x53D8;&#x6837;&#x5F0F;</h4>
 
                                 
                                 </section>
@@ -696,7 +699,7 @@
                 </a>
                 
                 
-                <a href="bom.html" class="navigation navigation-next " aria-label="Next page: 5-2-BOM基础">
+                <a href="window.html" class="navigation navigation-next " aria-label="Next page: 5-2-window对象">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -707,7 +710,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"5-1-DOM基础","level":"1.7.1","depth":2,"next":{"title":"5-2-BOM基础","level":"1.7.2","depth":2,"path":"part5/bom.md","ref":"part5/bom.md","articles":[]},"previous":{"title":"5-javascript基础（二）","level":"1.7","depth":1,"path":"part5/README.md","ref":"part5/README.md","articles":[{"title":"5-1-DOM基础","level":"1.7.1","depth":2,"path":"part5/dom.md","ref":"part5/dom.md","articles":[]},{"title":"5-2-BOM基础","level":"1.7.2","depth":2,"path":"part5/bom.md","ref":"part5/bom.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part5/dom.md","mtime":"2016-10-11T01:11:57.777Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-10-11T03:39:48.594Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"5-1-DOM基础","level":"1.7.1","depth":2,"next":{"title":"5-2-window对象","level":"1.7.2","depth":2,"path":"part5/window.md","ref":"part5/window.md","articles":[]},"previous":{"title":"5-javascript基础（二）","level":"1.7","depth":1,"path":"part5/README.md","ref":"part5/README.md","articles":[{"title":"5-1-DOM基础","level":"1.7.1","depth":2,"path":"part5/dom.md","ref":"part5/dom.md","articles":[]},{"title":"5-2-window对象","level":"1.7.2","depth":2,"path":"part5/window.md","ref":"part5/window.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part5/dom.md","mtime":"2016-10-11T08:38:35.559Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-10-11T08:55:23.325Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

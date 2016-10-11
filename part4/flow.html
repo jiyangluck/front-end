@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>4-2-函数 · GitBook</title>
+        <title>4-5-语句流 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="object.html" />
+    <link rel="next" href="../part5/" />
     
     
-    <link rel="prev" href="datatype.html" />
+    <link rel="prev" href="array.html" />
     
 
     </head>
@@ -329,7 +329,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.6.2" data-path="function.html">
+        <li class="chapter " data-level="1.6.2" data-path="function.html">
             
                 <a href="function.html">
             
@@ -368,7 +368,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.5" data-path="flow.html">
+        <li class="chapter active" data-level="1.6.5" data-path="flow.html">
             
                 <a href="flow.html">
             
@@ -635,7 +635,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >4-2-函数</a>
+        <a href=".." >4-5-语句流</a>
     </h1>
 </div>
 
@@ -650,38 +650,31 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x7B2C;2&#x8282;&#x51FD;&#x6570;">&#x7B2C;2&#x8282;:&#x51FD;&#x6570;</h2>
-<p>&#x51FD;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x6267;&#x884C;&#x7684;&#x8BED;&#x53E5;&#x5757;&#xFF0C;&#x58F0;&#x660E;&#x7684;&#x65F6;&#x5019;&#x4E0D;&#x6267;&#x884C;&#xFF0C;&#x8C03;&#x7528;&#x7684;&#x65F6;&#x5019;&#x6267;&#x884C;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;function&#x6765;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x51FD;&#x6570;</p>
-<pre><code class="lang-js"><span class="hljs-comment">//&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x51FD;&#x6570;</span>
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fun</span>(<span class="hljs-params"></span>)</span>{
-    <span class="hljs-comment">//&#x51FD;&#x6570;&#x7684;&#x5185;&#x5BB9;</span>
-    alert(<span class="hljs-string">&quot;hello function&quot;</span>)
+                                <h2 id="&#x7B2C;5&#x8282;&#x8BED;&#x53E5;&#x6D41;">&#x7B2C;5&#x8282;:&#x8BED;&#x53E5;&#x6D41;</h2>
+<p>&#x7A0B;&#x5E8F;&#x6709;&#x4E09;&#x79CD;&#x6267;&#x884C;&#x987A;&#x5E8F;&#xFF1A;</p>
+<ul>
+<li>&#x987A;&#x5E8F;</li>
+<li>&#x5206;&#x652F;</li>
+<li>&#x5FAA;&#x73AF;
+&#x4E4B;&#x524D;&#x5199;&#x7684;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x90FD;&#x662F;&#x6309;&#x987A;&#x5E8F;&#x6267;&#x884C;&#x7684;&#xFF0C;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x6765;&#x4ECB;&#x7ECD;&#x5206;&#x652F;&#x548C;&#x5FAA;&#x73AF;&#x8BED;&#x53E5;</li>
+</ul>
+<h4 id="&#x5206;&#x652F;&#x8BED;&#x53E5;if&#x548C;ifelse">&#x5206;&#x652F;&#x8BED;&#x53E5;:if&#x548C;if...else...</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">if</span>(&#x5E03;&#x5C14;&#x503C;){
+    <span class="hljs-comment">//if&#x8BED;&#x53E5;&#x5185;&#x5BB9;</span>
 }
-
-<span class="hljs-comment">//&#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x51FD;&#x6570;</span>
-fun();
 </code></pre>
-<p>&#x5728;&#x4E0A;&#x9762;&#x7684;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;fun&#x662F;&#x51FD;&#x6570;&#x540D;&#xFF0C;&#x51FD;&#x6570;fun&#x58F0;&#x660E;&#x7684;&#x65F6;&#x5019;&#xFF0C;{}&#x5185;&#x90E8;&#x7684;&#x4EE3;&#x7801;&#x4E0D;&#x4F1A;&#x6267;&#x884C;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x201C;&#x51FD;&#x6570;&#x540D;()&#x201D;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x8C03;&#x7528;&#x51FD;&#x6570;&#xFF0C;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x4E4B;&#x540E;&#x82B1;&#x62EC;&#x53F7;&#x5185;&#x7684;&#x4EE3;&#x7801;&#x624D;&#x4F1A;&#x6267;&#x884C;&#x3002;</p>
-<h4 id="demo4-2-1&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x8BA1;&#x7B97;10&#x548C;20&#x7684;&#x52A0;&#x548C;">DEMO4-2-1:&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x8BA1;&#x7B97;10&#x548C;20&#x7684;&#x52A0;&#x548C;</h4>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">add</span>(<span class="hljs-params"></span>)</span>{
-    <span class="hljs-keyword">var</span> num1 = <span class="hljs-number">10</span>;
-    <span class="hljs-keyword">var</span> num2 = <span class="hljs-number">20</span>;
-    <span class="hljs-keyword">var</span> result = num1 + num2;
-    alert(result);
+<p>&#x5982;&#x4E0A;&#x9762;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x6240;&#x793A;&#xFF0C;&#x5982;&#x679C;if&#x540E;&#x9762;&#x7684;&#x5E03;&#x5C14;&#x503C;&#x662F;true&#xFF0C;&#x5219;&#x6267;&#x884C;if&#x8BED;&#x53E5;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5982;&#x679C;&#x662F;false&#x5219;&#x8DF3;&#x8FC7;&#x4E0D;&#x6267;&#x884C;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">if</span>(&#x5E03;&#x5C14;&#x503C;){
+    <span class="hljs-comment">//if&#x8BED;&#x53E5;&#x5185;&#x5BB9;</span>
+}<span class="hljs-keyword">else</span>{
+    <span class="hljs-comment">//else&#x8BED;&#x53E5;&#x5185;&#x5BB9;</span>
 }
-
-add();    <span class="hljs-comment">//&#x63A7;&#x5236;&#x53F0;&#x8F93;&#x51FA;30&#xFF1B;</span>
 </code></pre>
-<h4 id="&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;">&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;</h4>
-<p>&#x58F0;&#x660E;&#x51FD;&#x6570;&#x7684;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x5728;&#x5C0F;&#x62EC;&#x53F7;&#x5185;&#x6307;&#x5B9A;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x5BF9;&#x5E94;&#x53C2;&#x6570;&#x7684;&#x503C;&#x3002;&#x58F0;&#x660E;&#x51FD;&#x6570;&#x65F6;&#x7684;&#x53C2;&#x6570;&#x53EB;&#x505A;&#x3010;&#x5F62;&#x53C2;&#x3011;&#xFF0C;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x65F6;&#x7684;&#x53C2;&#x6570;&#x53EB;&#x505A;&#x3010;&#x5B9E;&#x53C2;&#x3011;&#x3002;</p>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fun</span>(<span class="hljs-params">str</span>)</span>{
-    alert(str);
-}
-fun(<span class="hljs-string">&quot;hello arg&quot;</span>);
-</code></pre>
-<p>&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x5728;&#x58F0;&#x660E;&#x51FD;&#x6570;&#x7684;&#x65F6;&#x5019;&#x6307;&#x5B9A;&#x4E86;&#x4E00;&#x4E2A;&#x53C2;&#x6570;str&#xFF0C;&#x5E76;&#x4E14;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x7528;alert&#x8F93;&#x51FA;str&#x7684;&#x503C;&#x3002;&#x5728;&#x8C03;&#x7528;fun&#x51FD;&#x6570;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C06;&quot;hello arg&quot;&#x4F5C;&#x4E3A;&#x5B9E;&#x53C2;&#x4F20;&#x7ED9;&#x51FD;&#x6570;&#xFF0C;&#x6240;&#x4EE5;&#x8C03;&#x7528;&#x7684;&#x65F6;&#x5019;&#x8F93;&#x51FA;&#x7684;&#x662F;&quot;hello arg&quot;</p>
-<h4 id="demo4-2-2&#x8BA1;&#x7B97;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x52A0;&#x548C;">DEMO4-2-2:&#x8BA1;&#x7B97;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x52A0;&#x548C;</h4>
-<h4 id="demo4-2-3&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;">DEMO4-2-3:&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;</h4>
+<p>&#x5982;&#x4E0A;&#x9762;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x6240;&#x793A;&#xFF0C;&#x5982;&#x679C;if&#x540E;&#x9762;&#x7684;&#x5E03;&#x5C14;&#x503C;&#x662F;true&#xFF0C;&#x5219;&#x6267;&#x884C;if&#x8BED;&#x53E5;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5982;&#x679C;&#x662F;false&#x5219;&#x6267;&#x884C;else&#x8BED;&#x53E5;&#x540E;&#x9762;&#x7684;&#x5185;&#x5BB9;</p>
+<h4 id="demo4-5-1&#x731C;&#x6570;&#x5B57;">DEMO4-5-1:&#x731C;&#x6570;&#x5B57;</h4>
+<h4 id="&#x5FAA;&#x73AF;&#x8BED;&#x53E5;for">&#x5FAA;&#x73AF;&#x8BED;&#x53E5;:for</h4>
+<h4 id="demo4-5-2&#x8BA1;&#x7B97;100&#x4EE5;&#x5185;&#x6240;&#x6709;&#x6570;&#x5B57;&#x7684;&#x52A0;&#x548C;">DEMO4-5-2:&#x8BA1;&#x7B97;100&#x4EE5;&#x5185;&#x6240;&#x6709;&#x6570;&#x5B57;&#x7684;&#x52A0;&#x548C;</h4>
+<h4 id="demo4-5-3&#x8F93;&#x51FA;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;">DEMO4-5-3:&#x8F93;&#x51FA;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;</h4>
 
                                 
                                 </section>
@@ -709,12 +702,12 @@ fun(<span class="hljs-string">&quot;hello arg&quot;</span>);
 
             
                 
-                <a href="datatype.html" class="navigation navigation-prev " aria-label="Previous page: 4-1-变量与数据类型">
+                <a href="array.html" class="navigation navigation-prev " aria-label="Previous page: 4-4-日期和数学对象">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="object.html" class="navigation navigation-next " aria-label="Next page: 4-3-对象">
+                <a href="../part5/" class="navigation navigation-next " aria-label="Next page: 5-javascript基础（二）">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -725,7 +718,7 @@ fun(<span class="hljs-string">&quot;hello arg&quot;</span>);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4-2-函数","level":"1.6.2","depth":2,"next":{"title":"4-3-对象","level":"1.6.3","depth":2,"path":"part4/object.md","ref":"part4/object.md","articles":[]},"previous":{"title":"4-1-变量与数据类型","level":"1.6.1","depth":2,"path":"part4/datatype.md","ref":"part4/datatype.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part4/function.md","mtime":"2016-10-11T07:50:18.429Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-10-11T08:55:23.325Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4-5-语句流","level":"1.6.5","depth":2,"next":{"title":"5-javascript基础（二）","level":"1.7","depth":1,"path":"part5/README.md","ref":"part5/README.md","articles":[{"title":"5-1-DOM基础","level":"1.7.1","depth":2,"path":"part5/dom.md","ref":"part5/dom.md","articles":[]},{"title":"5-2-window对象","level":"1.7.2","depth":2,"path":"part5/window.md","ref":"part5/window.md","articles":[]}]},"previous":{"title":"4-4-日期和数学对象","level":"1.6.4","depth":2,"path":"part4/array.md","ref":"part4/array.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part4/flow.md","mtime":"2016-10-11T08:24:29.257Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-10-11T08:55:23.325Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
