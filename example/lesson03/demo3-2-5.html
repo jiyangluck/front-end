@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo08:选项卡</title>
+	<style type="text/css">
+		*{
+			margin:0px;
+			padding:0px;
+			box-sizing: border-box;
+		}
+		.tab li{
+			float: left;
+			list-style: none;
+			width:100px;
+			height:30px;
+			border:1px solid #aaa;
+			line-height: 30px;
+			text-align: center;
+		}
+		.box div{
+			width:300px;
+			height:300px;
+			border:1px solid #aaa;
+			display: none;
+		}
+		.box .active{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<ul class="tab">
+		<li>标签一</li>
+		<li>标签二</li>
+		<li>标签三</li>
+	</ul>
+	<div class="box">
+		<div class="box1 active">
+			<h1>内容一</h1>
+		</div>
+		<div class="box2">
+			<h1>内容二</h1>
+		</div>
+		<div class="box3">
+			<h1>内容三</h1>
+		</div>
+	</div>
+	<script src="../script/jquery.js"></script>
+	<script>
+		$(".tab li").click(function(){
+			var index = $(this).index();
+			$(".box div").eq(index)
+						.css("display","block")
+						.siblings()
+						.css("display","none");
+		})
+	</script>
+</body>
+</html>

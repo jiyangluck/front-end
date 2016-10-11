@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo06:点击数字列表切换图片</title>
+	<style type="text/css">
+		#num-list li{
+			width:20px;
+			height:20px;
+			border:1px solid #aaa;
+			float: left;
+			line-height: 20px;
+			text-align: center;
+			list-style: none;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<img id="pic" src="../images/0.jpg">
+	<ul id="num-list">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+	</ul>
+	<script src="../script/jquery.js"></script>
+	<script>
+		var imgList = [
+			"../images/0.jpg",
+			"../images/1.jpg",
+			"../images/2.jpg",
+			"../images/3.jpg",
+			"../images/4.jpg"
+		]
+		$("#num-list li").click(function(){
+			var index = $(this).index();
+			var src = imgList[index];
+			$("#pic").attr("src",src);
+		})
+	</script>
+</body>
+</html>
