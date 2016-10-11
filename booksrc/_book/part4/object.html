@@ -360,7 +360,7 @@
                 <a href="array.html">
             
                     
-                    4-4-数组
+                    4-4-日期和数学对象
             
                 </a>
             
@@ -368,25 +368,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.5" data-path="array.html">
+        <li class="chapter " data-level="1.6.5" data-path="flow.html">
             
-                <a href="array.html">
-            
-                    
-                    4-5-日期和数学对象
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.6" data-path="regexp.html">
-            
-                <a href="regexp.html">
+                <a href="flow.html">
             
                     
-                    4-6-正则表达式
+                    4-5-语句流
             
                 </a>
             
@@ -426,12 +413,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.2" data-path="../part5/bom.html">
+        <li class="chapter " data-level="1.7.2" data-path="../part5/window.html">
             
-                <a href="../part5/bom.html">
+                <a href="../part5/window.html">
             
                     
-                    5-2-BOM基础
+                    5-2-window对象
             
                 </a>
             
@@ -521,7 +508,7 @@
                 <a href="../part7/html5.html">
             
                     
-                    7-1-html5新特性
+                    7-1-html5，css3新特性
             
                 </a>
             
@@ -529,12 +516,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.2" data-path="../part7/css3.html">
+        <li class="chapter " data-level="1.9.2" data-path="../part7/animate.html">
             
-                <a href="../part7/css3.html">
+                <a href="../part7/animate.html">
             
                     
-                    7-2-css3新特性
+                    7-2-css3动画
             
                 </a>
             
@@ -542,12 +529,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.3" data-path="../part7/animate.md">
+        <li class="chapter " data-level="1.9.3" data-path="../part7/mobile.html">
             
-                <span>
+                <a href="../part7/mobile.html">
             
                     
-                    7-3-css3动画
+                    7-3-移动端页面制作
             
                 </a>
             
@@ -664,6 +651,26 @@
                                 <section class="normal markdown-section">
                                 
                                 <h2 id="&#x7B2C;3&#x8282;&#x5BF9;&#x8C61;">&#x7B2C;3&#x8282;:&#x5BF9;&#x8C61;</h2>
+<p>&#x516D;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E2D;&#xFF0C;&#x6700;&#x7279;&#x6B8A;&#x7684;&#x5C31;&#x662F;&#x5BF9;&#x8C61;</p>
+<h4 id="&#x5BF9;&#x8C61;&#x662F;&#x5C5E;&#x6027;&#x7684;&#x65E0;&#x5E8F;&#x96C6;&#x5408;&#xFF0C;&#x5982;&#x679C;&#x5BF9;&#x8C61;&#x7684;&#x67D0;&#x4E2A;&#x5C5E;&#x6027;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x90A3;&#x6211;&#x4EEC;&#x53EB;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x662F;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5BF9;&#x8C61;&#x7684;&#x8BED;&#x6CD5;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;">&#x5BF9;&#x8C61;&#x662F;&#x5C5E;&#x6027;&#x7684;&#x65E0;&#x5E8F;&#x96C6;&#x5408;&#xFF0C;&#x5982;&#x679C;&#x5BF9;&#x8C61;&#x7684;&#x67D0;&#x4E2A;&#x5C5E;&#x6027;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x90A3;&#x6211;&#x4EEC;&#x53EB;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x662F;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5BF9;&#x8C61;&#x7684;&#x8BED;&#x6CD5;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> dog = {
+    name:<span class="hljs-string">&quot;wangcai&quot;</span>,
+    age:<span class="hljs-number">2</span>,
+    sayName:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        alert(<span class="hljs-string">&quot;&#x6211;&#x662F;&quot;</span>+<span class="hljs-keyword">this</span>.name)
+    }
+}
+
+dog.sayName();   <span class="hljs-comment">//&#x8C03;&#x7528;dog&#x7684;sayName&#x65B9;&#x6CD5;&#x3002;</span>
+</code></pre>
+<p>&#x5728;&#x4E0A;&#x9762;&#x7684;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x6709;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;dog&#xFF0C;&#x5C5E;&#x6027;name&#x7684;&#x503C;&#x662F;wangcai&#xFF0C;&#x5C5E;&#x6027;age&#x7684;&#x503C;&#x662F;2&#xFF0C;&#x5C5E;&#x6027;sayName&#x7684;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x6240;&#x4EE5;sayName&#x662F;dog&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x6211;&#x4EEC;&#x901A;&#x8FC7;dog.sayName()&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;dog&#x5BF9;&#x8C61;&#x5C31;&#x80FD;&#x8F93;&#x51FA;&#x81EA;&#x5DF1;&#x7684;&#x540D;&#x5B57;&#x4E86;&#x3002;</p>
+<h4 id="&#x5185;&#x7F6E;&#x5BF9;&#x8C61;math">&#x5185;&#x7F6E;&#x5BF9;&#x8C61;:Math</h4>
+<p>Math&#x662F;js&#x7684;&#x5185;&#x7F6E;&#x5BF9;&#x8C61;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x901A;&#x8FC7;Math&#x65B9;&#x6CD5;&#x5B8C;&#x6210;&#x4E00;&#x4E9B;&#x6570;&#x5B66;&#x8FD0;&#x7B97;&#x6216;&#x83B7;&#x53D6;&#x968F;&#x673A;&#x6570;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> num = <span class="hljs-number">3.14</span>;
+<span class="hljs-keyword">var</span> result = <span class="hljs-built_in">Math</span>.floor(num); <span class="hljs-comment">//&#x5411;&#x4E0B;&#x53D6;&#x6574;&#xFF0C;&#x7ED3;&#x679C;&#x662F; 3</span>
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> result = <span class="hljs-built_in">Math</span>.random();   <span class="hljs-comment">//&#x83B7;&#x53D6;&#x4E00;&#x4E2A;0~1&#x4E4B;&#x95F4;&#x7684;&#x968F;&#x673A;&#x6570;</span>
+</code></pre>
 
                                 
                                 </section>
@@ -696,7 +703,7 @@
                 </a>
                 
                 
-                <a href="array.html" class="navigation navigation-next " aria-label="Next page: 4-4-数组">
+                <a href="array.html" class="navigation navigation-next " aria-label="Next page: 4-4-日期和数学对象">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -707,7 +714,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4-3-对象","level":"1.6.3","depth":2,"next":{"title":"4-4-数组","level":"1.6.4","depth":2,"path":"part4/array.md","ref":"part4/array.md","articles":[]},"previous":{"title":"4-2-函数","level":"1.6.2","depth":2,"path":"part4/function.md","ref":"part4/function.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part4/object.md","mtime":"2016-10-11T01:11:57.777Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-10-11T03:39:48.594Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4-3-对象","level":"1.6.3","depth":2,"next":{"title":"4-4-日期和数学对象","level":"1.6.4","depth":2,"path":"part4/array.md","ref":"part4/array.md","articles":[]},"previous":{"title":"4-2-函数","level":"1.6.2","depth":2,"path":"part4/function.md","ref":"part4/function.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part4/object.md","mtime":"2016-10-11T08:08:05.224Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-10-11T08:55:23.325Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -1,9 +1,9 @@
+booksrc/_book/
 node_modules/
 %USERPROFILE%/
 build
 .DS_Store
 .publish/
 *.tgz
-booksrc/_book/
 my-app*
 template/src/__tests__/__snapshots__/

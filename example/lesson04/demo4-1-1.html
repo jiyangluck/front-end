@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" id="num1">
+	+
+	<input type="text" id="num2">
+	<button>计算</button>
+	<script src="../script/jquery.js"></script>
+	<script>
+		$("button").click(function(){
+			var num1 = $("#num1").val();
+			var num2 = $("#num2").val();
+			var result = Number(num1) + Number(num2);
+			alert(result);
+		})
+	</script>
+</body>
+</html>
