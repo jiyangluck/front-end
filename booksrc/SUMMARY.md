@@ -36,4 +36,6 @@
     * [8-1-git工具的使用](part8/git.md)
     * [8-2-在github上发布你的静态网站](part8/github.md)
     * [8-3-gulp入门](part8/gulp.md)
+    * [8-4-less基础](part8/less.md)
+    * [8-5-jQuery插件的使用](part8/plugin.md)
 
