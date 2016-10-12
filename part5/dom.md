@@ -18,6 +18,47 @@ document.querySelectorAll(".class");
 ```
 
 #### 绑定事件
+获取节点后，可以为获取的节点绑定事件
+``` js
+var elem = document.querySelector("#id");
+elem.onclick = function(){
+    alert("hello event");
+}
+```
 
-#### 改变样式
+#### DEMO5-1-1:获取属性
+本案例中有一个文本框和一个按钮，在文本框中输入内容后点击按钮会弹出文本框中输入的内容。例子实际上就是：点击按钮触发事件，alert弹出文本框的value属性值。在这里，我们使用document.querySelector方法获取元素。
+``` js
+var oTxt = document.querySelector("#txt");
+var oBtn = document.querySelector("#btn");
+oBtn.onclick = function(){
+    alert(oTxt.value);
+}
+```
+
+#### DEMO5-1-2:添加节点
+html
+``` html
+<input type="text" id="txt">
+<button id="btn">按钮</button>
+<ul id="list">
+    <li>苹果</li>
+    <li>香蕉</li>
+    <li>鸭梨</li>
+</ul>
+```
+JavaScript
+
+``` js
+var oTxt = document.querySelector("#txt");
+var oBtn = document.querySelector("#btn");
+var oList = document.querySelector("#list");
+oBtn.onclick = function(){
+    var value = oTxt.value;
+    var oLi = document.createElement("li");
+    var text = document.createTextNode(value);
+    oLi.appendChild(text);
+    oList.appendChild(oLi);
+}
+```
 
