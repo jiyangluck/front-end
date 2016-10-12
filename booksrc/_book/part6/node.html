@@ -678,9 +678,42 @@
                                 
                                 <h2 id="&#x7B2C;1&#x8282;&#x521D;&#x8BC6;node">&#x7B2C;1&#x8282;:&#x521D;&#x8BC6;node</h2>
 <h4 id="&#x4E0B;&#x8F7D;&#x548C;&#x5B89;&#x88C5;node">&#x4E0B;&#x8F7D;&#x548C;&#x5B89;&#x88C5;node</h4>
+<p>&#x5230;<a href="http://nodejs.cn/" target="_blank">node&#x4E2D;&#x6587;&#x7F51;</a>&#x4E0B;&#x8F7D;&#x6700;&#x65B0;&#x7248;&#x672C;&#x7684;node&#x5E76;&#x5B89;&#x88C5;&#x3002;node&#x7684;&#x5B89;&#x88C5;&#x5305;&#x81EA;&#x5E26;npm&#xFF0C;npm&#x662F;node&#x7684;&#x5305;&#x7BA1;&#x7406;&#x5668;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x5F00;&#x53D1;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;npm&#x4E0B;&#x8F7D;&#x9879;&#x76EE;&#x7684;&#x4F9D;&#x8D56;&#x6A21;&#x5757;&#xFF08;&#x4F7F;&#x7528;npm&#x9700;&#x8981;&#x7528;&#x5230;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x63A8;&#x8350;&#x4F7F;&#x7528;git bash&#xFF0C;git bash&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x89C1;&#x7B2C;&#x516B;&#x7AE0;&#xFF09;&#x3002;</p>
+<p>&#x5728;git bash&#x4E2D;&#x8F93;&#x5165;</p>
+<pre><code class="lang-bash">node -v
+npm -v
+</code></pre>
+<p>&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x547D;&#x4EE4;&#x90FD;&#x80FD;&#x6B63;&#x786E;&#x8F93;&#x51FA;node&#x548C;npm&#x7684;&#x7248;&#x672C;&#x53F7;&#xFF0C;&#x8BF4;&#x660E;&#x8F6F;&#x4EF6;&#x5B89;&#x88C5;&#x6210;&#x529F;&#x3002;</p>
+<h4 id="hello-world">hello world</h4>
+<p>&#x6211;&#x4EEC;&#x7528;node&#x5B8C;&#x6210;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x4EFB;&#x52A1;&#x4ECD;&#x7136;&#x662F;&#x8F93;&#x51FA;hello world&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;js&#x6587;&#x4EF6;,&#x6587;&#x4EF6;&#x540D;&#x4E3A;myscript.js&#xFF0C;&#x91CC;&#x9762;&#x6DFB;&#x52A0;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;hello world&quot;</span>);
+</code></pre>
+<p>&#x7136;&#x540E;&#x5728;git bash&#x4E2D;&#x8F93;&#x5165;</p>
+<pre><code class="lang-bash">node myscript.js
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x6267;&#x884C;&#x540E;&#x4F1A;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x7684;&#x63A7;&#x5236;&#x53F0;&#x8F93;&#x51FA;hello world&#x3002;</p>
 <h4 id="&#x6A21;&#x5757;&#x7684;&#x6982;&#x5FF5;">&#x6A21;&#x5757;&#x7684;&#x6982;&#x5FF5;</h4>
+<p>node&#x4E2D;&#x6709;&#x4E09;&#x79CD;&#x6A21;&#x5757;</p>
+<ul>
+<li>&#x6838;&#x5FC3;&#x6A21;&#x5757;</li>
+<li>&#x81EA;&#x5B9A;&#x4E49;&#x6A21;&#x5757;</li>
+<li>&#x7B2C;&#x4E09;&#x65B9;&#x6A21;&#x5757;
+&#x5176;&#x4E2D;&#x3010;&#x6838;&#x5FC3;&#x6A21;&#x5757;&#x3011;&#x662F;&#x5B89;&#x88C5;node&#x4E4B;&#x540E;&#x5C31;&#x81EA;&#x5E26;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x3002;&#x3010;&#x81EA;&#x5B9A;&#x4E49;&#x6A21;&#x5757;&#x3011;&#x662F;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x521B;&#x5EFA;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x5176;&#x5B9E;&#x5728;node&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5199;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x90FD;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x3002;&#x3010;&#x7B2C;&#x4E09;&#x65B9;&#x6A21;&#x5757;&#x3011;&#x662F;&#x522B;&#x4EBA;&#x5199;&#x597D;&#x5E76;&#x53D1;&#x5E03;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;npm&#x4E0B;&#x8F7D;&#x7B2C;&#x4E09;&#x65B9;&#x6A21;&#x5757;&#x6765;&#x4F7F;&#x7528;&#x522B;&#x4EBA;&#x4E3A;&#x6211;&#x4EEC;&#x5199;&#x597D;&#x7684;&#x529F;&#x80FD;&#x3002;&#x672C;&#x8282;&#x8BFE;&#x7A0B;&#x6211;&#x4EEC;&#x4E3B;&#x8981;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x53EB;&#x505A;express&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x6A21;&#x5757;&#x3002;</li>
+</ul>
 <h4 id="&#x4F7F;&#x7528;npm&#x4E0B;&#x8F7D;&#x7B2C;&#x4E09;&#x65B9;&#x6A21;&#x5757;">&#x4F7F;&#x7528;npm&#x4E0B;&#x8F7D;&#x7B2C;&#x4E09;&#x65B9;&#x6A21;&#x5757;</h4>
+<p>&#x4E0B;&#x8F7D;express</p>
+<pre><code class="lang-bash">npm install express
+</code></pre>
 <h4 id="packagejson&#x6587;&#x4EF6;">package.json&#x6587;&#x4EF6;</h4>
+<p>package.json&#x6587;&#x4EF6;&#x7B80;&#x8981;&#x8BF4;&#x660E;</p>
+<pre><code class="lang-js">{
+    <span class="hljs-string">&quot;name&quot;</span>:<span class="hljs-string">&quot;myname&quot;</span>,
+    <span class="hljs-string">&quot;version&quot;</span>:<span class="hljs-string">&quot;0.0.0&quot;</span>
+}
+</code></pre>
+<p>&#x4F7F;&#x7528;package.json&#x6587;&#x4EF6;&#x6765;&#x7BA1;&#x7406;&#x9879;&#x76EE;&#x4F9D;&#x8D56;</p>
+<pre><code class="lang-bash">npm install express --save-dev
+</code></pre>
 
                                 
                                 </section>
@@ -724,7 +757,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"6-1-初识node","level":"1.8.1","depth":2,"next":{"title":"6-2-搭建服务器","level":"1.8.2","depth":2,"path":"part6/server.md","ref":"part6/server.md","articles":[]},"previous":{"title":"6-前后台数据交互","level":"1.8","depth":1,"path":"part6/README.md","ref":"part6/README.md","articles":[{"title":"6-1-初识node","level":"1.8.1","depth":2,"path":"part6/node.md","ref":"part6/node.md","articles":[]},{"title":"6-2-搭建服务器","level":"1.8.2","depth":2,"path":"part6/server.md","ref":"part6/server.md","articles":[]},{"title":"6-3-ajax","level":"1.8.3","depth":2,"path":"part6/ajax.md","ref":"part6/ajax.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part6/node.md","mtime":"2016-10-11T08:44:23.581Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-10-12T08:43:40.555Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"6-1-初识node","level":"1.8.1","depth":2,"next":{"title":"6-2-搭建服务器","level":"1.8.2","depth":2,"path":"part6/server.md","ref":"part6/server.md","articles":[]},"previous":{"title":"6-前后台数据交互","level":"1.8","depth":1,"path":"part6/README.md","ref":"part6/README.md","articles":[{"title":"6-1-初识node","level":"1.8.1","depth":2,"path":"part6/node.md","ref":"part6/node.md","articles":[]},{"title":"6-2-搭建服务器","level":"1.8.2","depth":2,"path":"part6/server.md","ref":"part6/server.md","articles":[]},{"title":"6-3-ajax","level":"1.8.3","depth":2,"path":"part6/ajax.md","ref":"part6/ajax.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part6/node.md","mtime":"2016-10-12T14:42:03.876Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-10-12T15:14:22.712Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

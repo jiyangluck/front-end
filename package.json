@@ -2,6 +2,7 @@
   "name": "test",
   "version": "0.0.0",
   "devDependencies": {
+    "express": "^4.14.0",
     "gulp": "^3.9.1",
     "gulp-gh-pages": "^0.5.4"
   }

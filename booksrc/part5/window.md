@@ -26,6 +26,31 @@ clearTimeout();
 ```
 
 #### DEMO5-2-1:五秒后跳转至百度
+首先，我们要使用js实现页面的跳转
+``` js
+location.href = "http://baidu.com"
+```
+
+然后我们实现五秒钟之后跳转到百度，代码如下：
+html
+``` html
+<p><span id="second">5</span>秒后自动跳转到百度</p>
+<!-- span用来显示剩余的秒数 -->
+```
+javascript
+``` js
+var second = 5;
+function countSecond(){
+    $("#second").text(second);
+    second--;
+    if(second == 0){
+        window.location.href = "http://baidu.com";
+    }
+}
+setInterval(countSecond,1000);
+```
 
 #### DEMO5-2-2:图片自动播放(用jQuery制作)
+[效果演示]()
+[案例代码]()
 

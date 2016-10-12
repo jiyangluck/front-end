@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo05-9:图片自动轮播</title>
+	<style type="text/css">
+		*{
+			margin:0px;
+			padding:0px;
+		}
+		#pic-list{
+			height:420px;
+			width:650px;
+			overflow: hidden;
+		}
+		#pic-list ul{
+			list-style: none;
+			width:3250px;
+		}
+		#pic-list ul li{
+			float: left;
+		}
+		#num-list li{
+			width: 20px;
+			height: 20px;
+			border:1px solid #aaa;
+			text-align: center;
+			line-height: 20px;
+			cursor: pointer;
+			float: left;
+			list-style: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="pic-list">
+		<ul>
+			<li><img src="../images/1.jpg" alt=""></li>
+			<li><img src="../images/2.jpg" alt=""></li>
+			<li><img src="../images/3.jpg" alt=""></li>
+			<li><img src="../images/4.jpg" alt=""></li>
+			<li><img src="../images/0.jpg" alt=""></li>
+		</ul>
+	</div>
+	<ul id="num-list">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+	</ul>
+	<script src="../script/jquery.js"></script>
+	<script>
+		var n = 0;
+		function setMarLeft(){
+			n++;
+			n = n == 5 ? 0 : n;
+			$("#pic-list ul").animate({
+				"margin-left" : n * -650
+			},500)
+			
+		}
+		var t = setInterval(setMarLeft,2000);
+		$("#num-list li").click(function(){
+			var index = $(this).index();
+			n = index;
+			$("#pic-list ul").animate({
+				"margin-left" : index * -650
+			},500)
+		}).mouseenter(function(){
+			clearInterval(t);
+		}).mouseleave(function(){
+			t = setInterval(setMarLeft,2000);
+		})
+	</script>
+</body>
+</html>
