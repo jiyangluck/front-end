@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo01-04:音频标签</title>
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<!-- <audio id="music" autoplay controls="controls">
+		<source src="media/media.mp3">
+	</audio> -->
+	<audio id="music" src="media/media.mp3" loop autoplay controls></audio>
+	<input type="button" value="播放" onclick="toggleSound()" id="toggle">
+	<input type="button" value="重新播放" onclick="reload()">
+	<script type="text/javascript">
+		function toggleSound(){
+			var music = document.getElementById('music')
+			var toggle = document.getElementById("toggle")
+			if(music.paused){
+				music.play();
+				toggle.value = "暂停";
+			}else{
+				music.pause();
+				toggle.value = "播放";
+			}
+		}
+		function reload(){
+			var music = document.getElementById("music");
+			music.load()
+		}
+		//element.paused:对象属性返回或设置是否暂停
+		//play():对象方法，开始播放视频
+		//load():重新加载视频
+		var range = document.getElementById('myRange');
+		var music = document.getElementById('music');
+		range.onclick = function(){
+			var audioVal = range.value/100;
+			music.volume = audioVal;
+		}
+	</script>
+</body>
+</html>

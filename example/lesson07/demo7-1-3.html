@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo01-06:视频标签</title>
+	<style type="text/css">
+
+		#mp4{
+			width: 640px;
+			height: 360px;
+		}
+
+	</style>
+</head>
+<body>
+	<video src="media/media.mp4" id="mp4" controls></video>
+	<input type="button" value="播放" id="videoToggle" onclick="toggleVideo()">
+	<script type="text/javascript">
+
+		function toggleVideo(){
+			var mp4 = document.getElementById('mp4');
+			var toggle = document.getElementById("videoToggle")
+			if(mp4.paused){
+				mp4.play();
+				toggle.value = "暂停"
+			}else{
+				mp4.pause();
+				toggle.value = "播放"
+			}
+		}
+
+	</script>
+</body>
+</html>
