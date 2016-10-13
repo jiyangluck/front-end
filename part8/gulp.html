@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>8-3-gulp入门 · GitBook</title>
+        <title>8-4-gulp入门 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -60,7 +60,7 @@
     <link rel="next" href="less.html" />
     
     
-    <link rel="prev" href="github.html" />
+    <link rel="prev" href="plugin.html" />
     
 
     </head>
@@ -587,38 +587,38 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.10.3" data-path="gulp.html">
-            
-                <a href="gulp.html">
-            
-                    
-                    8-3-gulp入门
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.4" data-path="less.html">
-            
-                <a href="less.html">
-            
-                    
-                    8-4-less基础
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.5" data-path="plugin.html">
+        <li class="chapter " data-level="1.10.3" data-path="plugin.html">
             
                 <a href="plugin.html">
             
                     
-                    8-5-jQuery插件的使用
+                    8-3-jQuery插件的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10.4" data-path="gulp.html">
+            
+                <a href="gulp.html">
+            
+                    
+                    8-4-gulp入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="less.html">
+            
+                <a href="less.html">
+            
+                    
+                    8-5-less基础
             
                 </a>
             
@@ -661,7 +661,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >8-3-gulp入门</a>
+        <a href=".." >8-4-gulp入门</a>
     </h1>
 </div>
 
@@ -676,7 +676,37 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h2 id="&#x7B2C;4&#x8282;gulp&#x5165;&#x95E8;">&#x7B2C;4&#x8282;:gulp&#x5165;&#x95E8;</h2>
+<p>gulp&#x662F;&#x4E00;&#x4E2A;&#x524D;&#x7AEF;&#x81EA;&#x52A8;&#x5316;&#x5DE5;&#x5177;&#xFF0C;&#x672C;&#x8282;&#x8BFE;&#x6211;&#x4EEC;&#x4ECB;&#x7ECD;&#x4F7F;&#x7528;gulp&#x548C;gulp&#x7684;&#x63D2;&#x4EF6;&#x6765;&#x5B9E;&#x73B0;&#x538B;&#x7F29;css&#x548C;&#x6DF7;&#x6DC6;js&#x7684;&#x529F;&#x80FD;&#x3002;</p>
+<h4 id="&#x5168;&#x5C40;&#x5B89;&#x88C5;gulp">&#x5168;&#x5C40;&#x5B89;&#x88C5;gulp</h4>
+<pre><code class="lang-bash">npm install gulp -g
+</code></pre>
+<h4 id="&#x538B;&#x7F29;css">&#x538B;&#x7F29;css</h4>
+<p>&#x4F7F;&#x7528;gulp&#x538B;&#x7F29;css&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5B89;&#x88C5;gulp-clear-css&#x63D2;&#x4EF6;</p>
+<pre><code class="lang-bash">npm install --save-dev gulp-clear-css
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> gulp = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;gulp&quot;</span>);
+<span class="hljs-keyword">var</span> cleanCSS = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;gulp-clean-css&quot;</span>);
+gulp.task(<span class="hljs-string">&quot;default&quot;</span>,<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> gulp.src(<span class="hljs-string">&quot;src/*.css&quot;</span>)
+        .pipe(cleanCSS())
+        .pipe(gulp.dest(<span class="hljs-string">&quot;dist&quot;</span>));
+})
+</code></pre>
+<h4 id="&#x6DF7;&#x6DC6;js">&#x6DF7;&#x6DC6;js</h4>
+<p>&#x4F7F;&#x7528;gulp&#x6DF7;&#x6DC6;css&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5B89;&#x88C5;gulp-uglify&#x63D2;&#x4EF6;</p>
+<pre><code class="lang-bash">npm install --save-dev gulp-uglify
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> gulp = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;gulp&quot;</span>);
+<span class="hljs-keyword">var</span> uglify = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;gulp-uglify&quot;</span>);
+gulp.task(<span class="hljs-string">&quot;default&quot;</span>,<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> gulp.src(<span class="hljs-string">&quot;src/*.js&quot;</span>)
+        .pipe(uglify())
+        .pipe(gulp.dest(<span class="hljs-string">&quot;dist&quot;</span>))
+})
+</code></pre>
+<p><strong>&#x60F3;&#x4E86;&#x89E3;&#x66F4;&#x591A;&#x5173;&#x4E8E;gulp&#x7684;&#x8BFE;&#x7A0B;&#xFF0C;&#x8BF7;&#x5173;&#x6CE8;&#x3010;&#x535A;&#x6613;&#x7F51;&#x3011;&#x516C;&#x4F17;&#x53F7;&#xFF0C;&#x5B9E;&#x65F6;&#x4E86;&#x89E3;&#x8BFE;&#x7A0B;&#x6700;&#x65B0;&#x6D88;&#x606F;</strong></p>
+
                                 
                                 </section>
                             
@@ -703,12 +733,12 @@
 
             
                 
-                <a href="github.html" class="navigation navigation-prev " aria-label="Previous page: 8-2-在github上发布你的静态网站">
+                <a href="plugin.html" class="navigation navigation-prev " aria-label="Previous page: 8-3-jQuery插件的使用">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="less.html" class="navigation navigation-next " aria-label="Next page: 8-4-less基础">
+                <a href="less.html" class="navigation navigation-next " aria-label="Next page: 8-5-less基础">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -719,7 +749,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"8-3-gulp入门","level":"1.10.3","depth":2,"next":{"title":"8-4-less基础","level":"1.10.4","depth":2,"path":"part8/less.md","ref":"part8/less.md","articles":[]},"previous":{"title":"8-2-在github上发布你的静态网站","level":"1.10.2","depth":2,"path":"part8/github.md","ref":"part8/github.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part8/gulp.md","mtime":"2016-10-12T13:41:30.562Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-10-12T15:14:22.712Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"8-4-gulp入门","level":"1.10.4","depth":2,"next":{"title":"8-5-less基础","level":"1.10.5","depth":2,"path":"part8/less.md","ref":"part8/less.md","articles":[]},"previous":{"title":"8-3-jQuery插件的使用","level":"1.10.3","depth":2,"path":"part8/plugin.md","ref":"part8/plugin.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part8/gulp.md","mtime":"2016-10-13T08:28:37.259Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-10-13T08:29:22.906Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
