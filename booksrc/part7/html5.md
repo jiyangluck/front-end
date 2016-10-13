@@ -21,12 +21,88 @@ html5和css3分别是已发布的最新的html和css版本，这个版本是在�
 7. 方法： pause暂停 load重新加载（初始状态决定是否播放） play播放
 8. 修改音乐播放的样式：不设置controls并且设置成autoplay
 
-#### DEMO07-1-2:音频标签
+#### DEMO7-1-2:音频标签
 
-#### DEMO07-1-3:视频标签
+#### DEMO7-1-3:视频标签
 
 #### 圆角
+html
+``` html
+<div class="box"></div>
+```
+css
+``` css
+.box{
+    height:200px;
+    width: 200px;
+    background-color: #00f;
+    border-radius: 100px; 
+}
+```
 
 #### 边框
+html
+``` html
+<div class="box"></div>
+```
+css
+``` css
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    /*边框再宽高之内*/
+}
+.box{
+    width:100px;
+    height:100px;
+    border:40px solid red;
+    /*如果边框大于宽高，会将盒子撑开*/
+}
+```
 
+#### 阴影
+html
+``` html
+<div class="box"></div>
+```
+css
+``` css
+.box{
+    width:200px;
+    height:200px;
+    border:1px solid red;
+    box-shadow: 20px 20px 50px 10px blue;
+    /*shox-shadow:x轴偏移 y轴偏移 阴影模糊半径 阴影扩展半径 阴影颜色 投影方式*/
+    /*投影方式设置inset：内部投影，不设置，外部投影*/
+}
+```
 #### 透明度
+html
+``` html
+<div class="box1">
+    <h1>测试</h1>
+</div>
+<div class="box2">
+    <h1>测试</h1>
+</div>
+```
+css
+``` css
+body{
+    background-color: #ff0;
+}
+.box1{
+    width:100px;
+    height:100px;
+    background-color: rgba(255,0,0,0.5);
+    /*设置原色和透明度，子集不会继承父级透明度*/
+}
+.box2{
+    width:100px;
+    height:100px;
+    background-color: #f00;
+    opacity: 0.5; 
+    /*设置透明度,子集会继承父级的透明度*/
+}
+```
