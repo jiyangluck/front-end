@@ -10,8 +10,8 @@
     * [1-5-网页布局基础](part1/layout.md)
 * [第二章 网页制作](part2/README.md)
     * [2-1-盒子模型](part2/box.md)
-    * [2-2-Photoshop基础](part2/ps.md)
-    * [2-3-网页制作基础](part2/webpage.md)
+    * [2-2-定位](part2/position.md)
+    * [2-3-网页重构](part2/ps.md)
 * [第三章 jQuery基础](part3/README.md)
     * [3-1-初识JavaScript](part3/js.md)
     * [3-2-jQuery入门](part3/jQuery.md)
@@ -37,5 +37,5 @@
     * [8-2-在github上发布你的静态网站](part8/github.md)
     * [8-3-jQuery插件的使用](part8/plugin.md)
     * [8-4-gulp入门](part8/gulp.md)
-    * [8-5-less基础](part8/less.md)
+    * [8-5-less基础](part8/less.md)  
 
