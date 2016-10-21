@@ -1,6 +1,6 @@
 ## 第2节:express搭建静态服务器
 
-#### 使用express搭建一个简单的服务器
+#### 一、 使用express搭建一个简单的服务器
 ``` js
 var express = require("express");
 var app = express();
@@ -12,7 +12,7 @@ app.listen(3000,function(){
 })
 ```
 
-#### 搭建静态服务器
+#### 二、 搭建静态服务器
 ``` js
 var express = require("express");
 var app = express();
@@ -22,7 +22,7 @@ app.listen(3000,function(){
 })
 ```
 
-#### 设置路由，处理表单提交的请求
+#### 三、 设置路由，处理表单提交的请求
 ``` js
 var express = require("express");
 var app = express();

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" id="num">
+	<button>猜数字</button>
+
+	<script src="../script/jquery.js"></script>
+	<script>
+		var number = Math.floor(Math.random()*10+1);
+		$("button").click(function(){
+			var value = Number($("#num").val());
+			if(value > number){
+				alert("大于真实结果！")
+			}else if(value < number){
+				alert("小于真实结果！")
+			}else if(value == number){
+				alert("恭喜你！回答正确！");
+			}
+		})
+	</script>
+</body>
+</html>

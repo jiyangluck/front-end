@@ -1,8 +1,7 @@
-## 第1节:输出hello world
-html和css都不算是编程语言，而前端开发最重要的编程语言就是JavaScript，那么现在的目标就是用JavaScript在网页中输出hello world
+## 第1节:javascript入门
 
-#### DEMO3-1-1:在网页中输出hello world
-js代码应该写在body标签结束前的script标签中
+#### 一、 在html文档中嵌入JavaScript代码
+JavaScript代码应该写在body标签结束前的script标签中
 ``` html
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +18,7 @@ js代码应该写在body标签结束前的script标签中
 </html>
 ```
 
+#### 二、 在网页中输出hello world(DEMO3-1-1)
 可以通过一行代码让浏览器弹出一个对话框，并输出"hello world"
 ``` js
 alert("hello world")

@@ -1,9 +1,9 @@
 ## 第1节:DOM基础
-之前我们做的获取节点和操作节点的工作都是通过jQuery完成的，那jQuery库优势如何获取和操作节点的呢？答案是DOM。
 
-DOM为我们提供了一套方法和属性，如果不依赖jQuery，哪儿我们也可以通过DOM来获取和操作节点，接下来就给大家介绍如果使用DOM提供的接口。
+#### 一、 DOM的概念
+DOM是一套接口，之前我们做的获取节点和操作节点的工作都是通过jQuery的接口完成的，如果脱离jQuery，我们可以用DOM提供的接口来操作DOM
 
-#### 获取节点
+#### 二、 获取节点
 ``` js
 //通过id获取
 document.getElementById("id");
@@ -17,7 +17,7 @@ document.querySelector("#id");
 document.querySelectorAll(".class");
 ```
 
-#### 绑定事件
+#### 三、 绑定事件
 获取节点后，可以为获取的节点绑定事件
 ``` js
 var elem = document.querySelector("#id");
@@ -26,7 +26,7 @@ elem.onclick = function(){
 }
 ```
 
-#### DEMO5-1-1:获取属性
+#### 四、 获取属性(DEMO5-1-1)
 本案例中有一个文本框和一个按钮，在文本框中输入内容后点击按钮会弹出文本框中输入的内容。例子实际上就是：点击按钮触发事件，alert弹出文本框的value属性值。在这里，我们使用document.querySelector方法获取元素。
 ``` js
 var oTxt = document.querySelector("#txt");
@@ -36,7 +36,8 @@ oBtn.onclick = function(){
 }
 ```
 
-#### DEMO5-1-2:添加节点
+#### 五、 添加节点(DEMO5-1-2)
+
 html
 ``` html
 <input type="text" id="txt">
@@ -47,8 +48,8 @@ html
     <li>鸭梨</li>
 </ul>
 ```
-JavaScript
 
+JavaScript
 ``` js
 var oTxt = document.querySelector("#txt");
 var oBtn = document.querySelector("#btn");
