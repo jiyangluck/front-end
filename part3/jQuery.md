@@ -1,4 +1,6 @@
 ## 第2节:jQuery入门
+
+#### 一、 引入jQuery
 jQuery是JavaScript的一个库，可以让我们用更少的代码来实现更多的页面效果。如果希望使用jQuery，那么需要在html文档中引入jQuery库，引入方法如下:
 ``` html
 <!DOCTYPE html>
@@ -17,7 +19,7 @@ jQuery是JavaScript的一个库，可以让我们用更少的代码来实现更�
 </html>
 ```
 
-#### DEMO3-2-1:用jQuery改变元素的样式
+#### 二、 用jQuery改变元素的样式(DEMO3-2-1)
 
 我们现在对css已经非常熟练了，css的思路是通过【css选择器】获取元素，然后通过【css属性】设置元素的样式，jQuery的编写也是类似的思虑，首先通过【jQuery选择器】获取元素，然后通过【jQuery方法】操作元素。
 
@@ -33,7 +35,7 @@ $("element")  //元素选择器
 $("#box").css("backgrount-color","green");
 ```
 
-#### DEMO3-2-2:点击div，让div背景颜色变成绿色
+#### 三、 点击div，让div背景颜色变成绿色(DEMO3-2-2)
 
 单单只是改变元素的样式并没有实际意义，我们下一步要做的是，点击这个div之后，让div的背景颜色改变。
 

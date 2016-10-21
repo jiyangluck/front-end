@@ -677,14 +677,14 @@
                                 <section class="normal markdown-section">
                                 
                                 <h2 id="&#x7B2C;5&#x8282;&#x8BED;&#x53E5;&#x6D41;">&#x7B2C;5&#x8282;:&#x8BED;&#x53E5;&#x6D41;</h2>
-<p>&#x7A0B;&#x5E8F;&#x6709;&#x4E09;&#x79CD;&#x6267;&#x884C;&#x987A;&#x5E8F;&#xFF1A;</p>
+<h4 id="&#x4E00;&#x3001;-&#x7A0B;&#x5E8F;&#x6709;&#x4E09;&#x79CD;&#x6267;&#x884C;&#x987A;&#x5E8F;">&#x4E00;&#x3001; &#x7A0B;&#x5E8F;&#x6709;&#x4E09;&#x79CD;&#x6267;&#x884C;&#x987A;&#x5E8F;</h4>
 <ul>
 <li>&#x987A;&#x5E8F;</li>
 <li>&#x5206;&#x652F;</li>
-<li>&#x5FAA;&#x73AF;
-&#x4E4B;&#x524D;&#x5199;&#x7684;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x90FD;&#x662F;&#x6309;&#x987A;&#x5E8F;&#x6267;&#x884C;&#x7684;&#xFF0C;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x6765;&#x4ECB;&#x7ECD;&#x5206;&#x652F;&#x548C;&#x5FAA;&#x73AF;&#x8BED;&#x53E5;</li>
+<li>&#x5FAA;&#x73AF;</li>
 </ul>
-<h4 id="&#x5206;&#x652F;&#x8BED;&#x53E5;if&#x548C;ifelse">&#x5206;&#x652F;&#x8BED;&#x53E5;:if&#x548C;if...else...</h4>
+<p>&#x4E4B;&#x524D;&#x5199;&#x7684;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x90FD;&#x662F;&#x6309;&#x987A;&#x5E8F;&#x6267;&#x884C;&#x7684;&#xFF0C;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x6765;&#x4ECB;&#x7ECD;&#x5206;&#x652F;&#x548C;&#x5FAA;&#x73AF;&#x8BED;&#x53E5;</p>
+<h4 id="&#x4E8C;&#x3001;-&#x5206;&#x652F;&#x8BED;&#x53E5;">&#x4E8C;&#x3001; &#x5206;&#x652F;&#x8BED;&#x53E5;</h4>
 <pre><code class="lang-js"><span class="hljs-keyword">if</span>(&#x5E03;&#x5C14;&#x503C;){
     <span class="hljs-comment">//if&#x8BED;&#x53E5;&#x5185;&#x5BB9;</span>
 }
@@ -697,21 +697,34 @@
 }
 </code></pre>
 <p>&#x5982;&#x4E0A;&#x9762;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x6240;&#x793A;&#xFF0C;&#x5982;&#x679C;if&#x540E;&#x9762;&#x7684;&#x5E03;&#x5C14;&#x503C;&#x662F;true&#xFF0C;&#x5219;&#x6267;&#x884C;if&#x8BED;&#x53E5;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5982;&#x679C;&#x662F;false&#x5219;&#x6267;&#x884C;else&#x8BED;&#x53E5;&#x540E;&#x9762;&#x7684;&#x5185;&#x5BB9;</p>
-<h4 id="demo4-5-1&#x731C;&#x6570;&#x5B57;">DEMO4-5-1:&#x731C;&#x6570;&#x5B57;</h4>
-<h4 id="&#x5FAA;&#x73AF;&#x8BED;&#x53E5;for">&#x5FAA;&#x73AF;&#x8BED;&#x53E5;:for</h4>
+<h4 id="&#x4E09;&#x3001;-&#x731C;&#x6570;&#x5B57;demo4-5-1">&#x4E09;&#x3001; &#x731C;&#x6570;&#x5B57;(DEMO4-5-1)</h4>
+<p>&#x6CA1;&#x6B21;&#x5237;&#x65B0;&#x9875;&#x9762;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x6570;&#xFF0C;&#x5728;&#x6587;&#x672C;&#x6846;&#x4E2D;&#x8F93;&#x5165;&#x6240;&#x731C;&#x7684;&#x6570;&#x5B57;&#xFF0C;&#x63D0;&#x793A;&#x6846;&#x4F1A;&#x5F39;&#x51FA;&#x7D22;&#x8D22;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> number = <span class="hljs-built_in">Math</span>.floor(<span class="hljs-built_in">Math</span>.random()*<span class="hljs-number">10</span>+<span class="hljs-number">1</span>);
+$(<span class="hljs-string">&quot;button&quot;</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> value = <span class="hljs-built_in">Number</span>($(<span class="hljs-string">&quot;#num&quot;</span>).val());
+    <span class="hljs-keyword">if</span>(value &gt; number){
+        alert(<span class="hljs-string">&quot;&#x5927;&#x4E8E;&#x771F;&#x5B9E;&#x7ED3;&#x679C;&#xFF01;&quot;</span>)
+    }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(value &lt; number){
+        alert(<span class="hljs-string">&quot;&#x5C0F;&#x4E8E;&#x771F;&#x5B9E;&#x7ED3;&#x679C;&#xFF01;&quot;</span>)
+    }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(value == number){
+        alert(<span class="hljs-string">&quot;&#x606D;&#x559C;&#x4F60;&#xFF01;&#x56DE;&#x7B54;&#x6B63;&#x786E;&#xFF01;&quot;</span>);
+    }
+})
+</code></pre>
+<h4 id="&#x56DB;&#x3001;-&#x5FAA;&#x73AF;&#x8BED;&#x53E5;">&#x56DB;&#x3001; &#x5FAA;&#x73AF;&#x8BED;&#x53E5;</h4>
 <pre><code class="lang-js"><span class="hljs-comment">//i&#x4ECE;0~9&#xFF0C;&#x5FAA;&#x73AF;10&#x6B21;&#x3002;</span>
 <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>;i&lt;<span class="hljs-number">10</span>;i++){
     <span class="hljs-built_in">console</span>.log(i);
 }
 </code></pre>
-<h4 id="demo4-5-2&#x8BA1;&#x7B97;100&#x4EE5;&#x5185;&#x6240;&#x6709;&#x6570;&#x5B57;&#x7684;&#x52A0;&#x548C;">DEMO4-5-2:&#x8BA1;&#x7B97;100&#x4EE5;&#x5185;&#x6240;&#x6709;&#x6570;&#x5B57;&#x7684;&#x52A0;&#x548C;</h4>
+<h4 id="&#x4E94;&#x3001;-&#x8BA1;&#x7B97;100&#x4EE5;&#x5185;&#x6240;&#x6709;&#x6570;&#x5B57;&#x7684;&#x52A0;&#x548C;demo4-5-2">&#x4E94;&#x3001; &#x8BA1;&#x7B97;100&#x4EE5;&#x5185;&#x6240;&#x6709;&#x6570;&#x5B57;&#x7684;&#x52A0;&#x548C;(DEMO4-5-2)</h4>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> sum = <span class="hljs-number">0</span>;
 <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>;i&lt;=<span class="hljs-number">100</span>;i++){
     sum += i;
 }
 <span class="hljs-built_in">console</span>.log(sum);
 </code></pre>
-<h4 id="demo4-5-3&#x8F93;&#x51FA;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;">DEMO4-5-3:&#x8F93;&#x51FA;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;</h4>
+<h4 id="&#x516D;&#x3001;-&#x8F93;&#x51FA;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;demo4-5-3">&#x516D;&#x3001; &#x8F93;&#x51FA;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;(DEMO4-5-3)</h4>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> superHero = [<span class="hljs-string">&quot;&#x94A2;&#x94C1;&#x4FA0;&quot;</span>,<span class="hljs-string">&quot;&#x7EFF;&#x5DE8;&#x4EBA;&quot;</span>,<span class="hljs-string">&quot;&#x7F8E;&#x56FD;&#x961F;&#x957F;&quot;</span>,<span class="hljs-string">&quot;&#x96F7;&#x795E;&quot;</span>];
 <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>;i&lt;superHero.length;i++){
     <span class="hljs-built_in">console</span>.log(superHero[i]);
@@ -760,7 +773,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4-5-语句流","level":"1.6.5","depth":2,"next":{"title":"第五章 javascript基础（二）","level":"1.7","depth":1,"path":"part5/README.md","ref":"part5/README.md","articles":[{"title":"5-1-DOM基础","level":"1.7.1","depth":2,"path":"part5/dom.md","ref":"part5/dom.md","articles":[]},{"title":"5-2-window对象","level":"1.7.2","depth":2,"path":"part5/window.md","ref":"part5/window.md","articles":[]}]},"previous":{"title":"4-4-日期和数学对象","level":"1.6.4","depth":2,"path":"part4/array.md","ref":"part4/array.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part4/flow.md","mtime":"2016-10-21T01:49:54.814Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-10-21T08:07:42.489Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4-5-语句流","level":"1.6.5","depth":2,"next":{"title":"第五章 javascript基础（二）","level":"1.7","depth":1,"path":"part5/README.md","ref":"part5/README.md","articles":[{"title":"5-1-DOM基础","level":"1.7.1","depth":2,"path":"part5/dom.md","ref":"part5/dom.md","articles":[]},{"title":"5-2-window对象","level":"1.7.2","depth":2,"path":"part5/window.md","ref":"part5/window.md","articles":[]}]},"previous":{"title":"4-4-日期和数学对象","level":"1.6.4","depth":2,"path":"part4/array.md","ref":"part4/array.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part4/flow.md","mtime":"2016-10-21T14:03:37.589Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-10-21T14:11:33.543Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
