@@ -120,7 +120,7 @@
                 <a href="../part1/">
             
                     
-                    1-html和css基础
+                    第一章 html和css基础
             
                 </a>
             
@@ -204,7 +204,7 @@
                 <a href="../part2/">
             
                     
-                    2-网页制作
+                    第二章 网页制作
             
                 </a>
             
@@ -262,7 +262,7 @@
                 <a href="../part3/">
             
                     
-                    3-jQuery基础
+                    第三章 jQuery基础
             
                 </a>
             
@@ -307,7 +307,7 @@
                 <a href="./">
             
                     
-                    4-javascript基础（一）
+                    第四章 javascript基础（一）
             
                 </a>
             
@@ -391,7 +391,7 @@
                 <a href="../part5/">
             
                     
-                    5-javascript基础（二）
+                    第五章 javascript基础（二）
             
                 </a>
             
@@ -436,7 +436,7 @@
                 <a href="../part6/">
             
                     
-                    6-前后台数据交互
+                    第六章 前后台数据交互
             
                 </a>
             
@@ -494,7 +494,7 @@
                 <a href="../part7/">
             
                     
-                    7-html5和css3基础
+                    第七章 html5和css3基础
             
                 </a>
             
@@ -552,7 +552,7 @@
                 <a href="../part8/">
             
                     
-                    8-前端开发常用工具
+                    第八章 前端开发常用工具
             
                 </a>
             
@@ -679,6 +679,13 @@
                                 <h2 id="&#x7B2C;3&#x8282;&#x5BF9;&#x8C61;">&#x7B2C;3&#x8282;:&#x5BF9;&#x8C61;</h2>
 <p>&#x516D;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E2D;&#xFF0C;&#x6700;&#x7279;&#x6B8A;&#x7684;&#x5C31;&#x662F;&#x5BF9;&#x8C61;</p>
 <h4 id="&#x5BF9;&#x8C61;&#x662F;&#x5C5E;&#x6027;&#x7684;&#x65E0;&#x5E8F;&#x96C6;&#x5408;&#xFF0C;&#x5982;&#x679C;&#x5BF9;&#x8C61;&#x7684;&#x67D0;&#x4E2A;&#x5C5E;&#x6027;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x90A3;&#x6211;&#x4EEC;&#x53EB;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x662F;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5BF9;&#x8C61;&#x7684;&#x8BED;&#x6CD5;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;">&#x5BF9;&#x8C61;&#x662F;&#x5C5E;&#x6027;&#x7684;&#x65E0;&#x5E8F;&#x96C6;&#x5408;&#xFF0C;&#x5982;&#x679C;&#x5BF9;&#x8C61;&#x7684;&#x67D0;&#x4E2A;&#x5C5E;&#x6027;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x90A3;&#x6211;&#x4EEC;&#x53EB;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x662F;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5BF9;&#x8C61;&#x7684;&#x8BED;&#x6CD5;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</h4>
+<pre><code class="lang-js"><span class="hljs-comment">//&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;</span>
+<span class="hljs-keyword">var</span> obj = {
+    <span class="hljs-string">&quot;&#x5C5E;&#x6027;&#x540D;1&quot;</span>:<span class="hljs-string">&quot;&#x5C5E;&#x6027;&#x503C;1&quot;</span>,
+    <span class="hljs-string">&quot;&#x5C5E;&#x6027;&#x540D;2&quot;</span>:<span class="hljs-string">&quot;&#x5C5E;&#x6027;&#x503C;2&quot;</span>
+}
+</code></pre>
+<h4 id="demo4-3-1&#x521B;&#x5EFA;&#x4E00;&#x4E2A;dog&#x5BF9;&#x8C61;">DEMO4-3-1:&#x521B;&#x5EFA;&#x4E00;&#x4E2A;dog&#x5BF9;&#x8C61;</h4>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> dog = {
     name:<span class="hljs-string">&quot;wangcai&quot;</span>,
     age:<span class="hljs-number">2</span>,
@@ -686,7 +693,7 @@
         alert(<span class="hljs-string">&quot;&#x6211;&#x662F;&quot;</span>+<span class="hljs-keyword">this</span>.name)
     }
 }
-
+dog.age():      <span class="hljs-comment">//&#x83B7;&#x53D6;dog&#x7684;name&#x5C5E;&#x6027;&#x3002;</span>
 dog.sayName();   <span class="hljs-comment">//&#x8C03;&#x7528;dog&#x7684;sayName&#x65B9;&#x6CD5;&#x3002;</span>
 </code></pre>
 <p>&#x5728;&#x4E0A;&#x9762;&#x7684;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x6709;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;dog&#xFF0C;&#x5C5E;&#x6027;name&#x7684;&#x503C;&#x662F;wangcai&#xFF0C;&#x5C5E;&#x6027;age&#x7684;&#x503C;&#x662F;2&#xFF0C;&#x5C5E;&#x6027;sayName&#x7684;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x6240;&#x4EE5;sayName&#x662F;dog&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x6211;&#x4EEC;&#x901A;&#x8FC7;dog.sayName()&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;dog&#x5BF9;&#x8C61;&#x5C31;&#x80FD;&#x8F93;&#x51FA;&#x81EA;&#x5DF1;&#x7684;&#x540D;&#x5B57;&#x4E86;&#x3002;</p>
@@ -696,6 +703,12 @@ dog.sayName();   <span class="hljs-comment">//&#x8C03;&#x7528;dog&#x7684;sayName
 <span class="hljs-keyword">var</span> result = <span class="hljs-built_in">Math</span>.floor(num); <span class="hljs-comment">//&#x5411;&#x4E0B;&#x53D6;&#x6574;&#xFF0C;&#x7ED3;&#x679C;&#x662F; 3</span>
 </code></pre>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> result = <span class="hljs-built_in">Math</span>.random();   <span class="hljs-comment">//&#x83B7;&#x53D6;&#x4E00;&#x4E2A;0~1&#x4E4B;&#x95F4;&#x7684;&#x968F;&#x673A;&#x6570;</span>
+</code></pre>
+<h4 id="demo4-3-2&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x751F;&#x6210;110&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x6570;&#x3002;">DEMO4-3-2:&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x751F;&#x6210;1~10&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x6570;&#x3002;</h4>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getRandom</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">Math</span>.floor(<span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">10</span> + <span class="hljs-number">1</span>);
+}
+alert(getRandom());
 </code></pre>
 
                                 
@@ -740,7 +753,7 @@ dog.sayName();   <span class="hljs-comment">//&#x8C03;&#x7528;dog&#x7684;sayName
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4-3-对象","level":"1.6.3","depth":2,"next":{"title":"4-4-日期和数学对象","level":"1.6.4","depth":2,"path":"part4/array.md","ref":"part4/array.md","articles":[]},"previous":{"title":"4-2-函数","level":"1.6.2","depth":2,"path":"part4/function.md","ref":"part4/function.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part4/object.md","mtime":"2016-10-11T08:08:05.224Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-10-14T08:28:45.606Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4-3-对象","level":"1.6.3","depth":2,"next":{"title":"4-4-日期和数学对象","level":"1.6.4","depth":2,"path":"part4/array.md","ref":"part4/array.md","articles":[]},"previous":{"title":"4-2-函数","level":"1.6.2","depth":2,"path":"part4/function.md","ref":"part4/function.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part4/object.md","mtime":"2016-10-21T01:42:51.971Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-10-21T03:41:21.829Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

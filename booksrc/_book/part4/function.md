@@ -35,7 +35,22 @@ fun("hello arg");
 上面的例子在声明函数的时候指定了一个参数str，并且函数内部用alert输出str的值。在调用fun函数的时候，将"hello arg"作为实参传给函数，所以调用的时候输出的是"hello arg"
 
 #### DEMO4-2-2:计算两个参数的加和
+``` js
+function count(num1,num2){
+    var result = num1 + num2;
+    alert(result);
+}
+count(10,20);
+```
 
 #### DEMO4-2-3:函数的返回值
+``` js
+function count(num1,num2){
+    var result = num1 + num2;
+    return result;
+}
+var number = count(10,20);
+alert(number);
+```
 
 

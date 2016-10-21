@@ -25,7 +25,26 @@ if(布尔值){
 #### DEMO4-5-1:猜数字
 
 #### 循环语句:for
+``` js
+//i从0~9，循环10次。
+for(var i = 0;i<10;i++){
+    console.log(i);
+}
+```
 
 #### DEMO4-5-2:计算100以内所有数字的加和
+``` js
+var sum = 0;
+for(var i = 0;i<=100;i++){
+    sum += i;
+}
+console.log(sum);
+```
 
 #### DEMO4-5-3:输出一个数组中的所有元素
+``` js
+var superHero = ["钢铁侠","绿巨人","美国队长","雷神"];
+for(var i = 0;i<superHero.length;i++){
+    console.log(superHero[i]);
+}
+```
