@@ -226,12 +226,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="../part2/ps.html">
+        <li class="chapter " data-level="1.4.2" data-path="../part2/position.html">
             
-                <a href="../part2/ps.html">
+                <a href="../part2/position.html">
             
                     
-                    2-2-Photoshop基础
+                    2-2-定位
             
                 </a>
             
@@ -239,12 +239,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="../part2/webpage.html">
+        <li class="chapter " data-level="1.4.3" data-path="../part2/ps.html">
             
-                <a href="../part2/webpage.html">
+                <a href="../part2/ps.html">
             
                     
-                    2-3-网页制作基础
+                    2-3-网页重构
             
                 </a>
             
@@ -677,6 +677,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <h2 id="&#x7B2C;2&#x8282;&#xFF1A;css&#x57FA;&#x7840;">&#x7B2C;2&#x8282;&#xFF1A;css&#x57FA;&#x7840;</h2>
+<h4 id="&#x4E00;&#x3001;-css&#x8BED;&#x6CD5;&#x5165;&#x95E8;">&#x4E00;&#x3001; css&#x8BED;&#x6CD5;&#x5165;&#x95E8;</h4>
 <p>&#x5BF9;&#x4E8E;&#x521D;&#x5B66;&#x8005;&#x6765;&#x8BF4;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x5C06;css&#x5199;&#x5728;html&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;head&#x6807;&#x7B7E;&#x4E0B;&#x7684;script&#x6807;&#x7B7E;&#x5185;&#xFF0C;css&#x8BED;&#x6CD5;</p>
 <pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
@@ -696,7 +697,7 @@
 <pre><code>&#x9009;&#x62E9;&#x5668;{
     &#x5C5E;&#x6027;&#x540D;:&#x5C5E;&#x6027;&#x503C;
 }
-</code></pre><h4 id="demo01css&#x9009;&#x62E9;&#x5668;">DEMO01:css&#x9009;&#x62E9;&#x5668;</h4>
+</code></pre><h4 id="&#x4E8C;&#x3001;-css&#x9009;&#x62E9;&#x5668;">&#x4E8C;&#x3001; css&#x9009;&#x62E9;&#x5668;</h4>
 <p>&#x9996;&#x5148;&#x5E94;&#x8BE5;&#x5B66;&#x4F1A;&#x4F7F;&#x7528;&#x6700;&#x5E38;&#x7528;&#x7684;&#x96C6;&#x4E2D;&#x9009;&#x62E9;&#x5668;</p>
 <ul>
 <li>id&#x9009;&#x62E9;&#x5668;</li>
@@ -713,9 +714,23 @@
 </code></pre>
 </li>
 </ul>
-<h4 id="demo02css&#x5E38;&#x7528;&#x5C5E;&#x6027;">DEMO02:css&#x5E38;&#x7528;&#x5C5E;&#x6027;</h4>
+<h4 id="&#x4E09;&#x3001;-css&#x5E38;&#x7528;&#x5C5E;&#x6027;">&#x4E09;&#x3001; css&#x5E38;&#x7528;&#x5C5E;&#x6027;</h4>
 <p>&#x521A;&#x624D;&#x7684;&#x4F8B;&#x5B50;&#x4F7F;&#x7528;&#x4E86;color&#x5C5E;&#x6027;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x6587;&#x5B57;&#x7684;&#x989C;&#x8272;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x4ECB;&#x7ECD;&#x66F4;&#x591A;&#x5E38;&#x7528;&#x7684;&#x5C5E;&#x6027;</p>
 <pre><code class="lang-css"><span class="hljs-selector-id">#id</span>{
+    <span class="hljs-attribute">color</span>:red;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;
+    <span class="hljs-attribute">width</span>:<span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">height</span>:<span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#eee</span>;
+}
+</code></pre>
+<h4 id="demo1-2-1-&#x4E3A;&#x81EA;&#x5DF1;&#x7684;&#x7F51;&#x9875;&#x6DFB;&#x52A0;&#x7B80;&#x5355;&#x7684;&#x6837;&#x5F0F;&#x3002;">DEMO1-2-1: &#x4E3A;&#x81EA;&#x5DF1;&#x7684;&#x7F51;&#x9875;&#x6DFB;&#x52A0;&#x7B80;&#x5355;&#x7684;&#x6837;&#x5F0F;&#x3002;</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myh&quot;</span>&gt;</span>&#x524D;&#x7AEF;&#x5F00;&#x53D1;&#x5DE5;&#x7A0B;&#x5E08;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-id">#myh</span>{
     <span class="hljs-attribute">color</span>:red;
     <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;
     <span class="hljs-attribute">width</span>:<span class="hljs-number">500px</span>;
@@ -769,7 +784,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1-2-css基础","level":"1.3.2","depth":2,"next":{"title":"1-3-元素分类与元素浮动","level":"1.3.3","depth":2,"path":"part1/display.md","ref":"part1/display.md","articles":[]},"previous":{"title":"1-1-html基础","level":"1.3.1","depth":2,"path":"part1/html.md","ref":"part1/html.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part1/css.md","mtime":"2016-10-21T03:40:28.613Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-10-21T03:41:21.829Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1-2-css基础","level":"1.3.2","depth":2,"next":{"title":"1-3-元素分类与元素浮动","level":"1.3.3","depth":2,"path":"part1/display.md","ref":"part1/display.md","articles":[]},"previous":{"title":"1-1-html基础","level":"1.3.1","depth":2,"path":"part1/html.md","ref":"part1/html.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part1/css.md","mtime":"2016-10-21T06:23:07.546Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-10-21T08:07:42.489Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
