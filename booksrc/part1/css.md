@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <style type="text/css">
+    <style>
         //css书写位置
     </style>
 </head>
