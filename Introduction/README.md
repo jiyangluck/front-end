@@ -55,7 +55,7 @@ import urllib2,os; pf='Package Control.sublime-package'; ipp = sublime.installed
 #### 三、 sublime text常用快捷键介绍(包括一些复制、保存等通用快捷键)
 * ctrl + n 新建
 * ctrl + s 保存
-* ctrl + c 赋值
+* ctrl + c 复制
 * ctrl + v 粘贴
 * ctrl + [ 减少一个缩进
 * ctrl + ] 增加一个缩进
