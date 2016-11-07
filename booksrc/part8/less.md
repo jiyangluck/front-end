@@ -1,4 +1,4 @@
-## 第5节:less基础
+## 第4节:less基础
 less是css预处理语言，通过less我们可以像编写编程语言一样来编写css，我们可以使用gulp的插件将less文件编译成css文件，less完全兼容css，所以我们在less中书写css，程序会被编译成同样的css文件。
 
 #### 变量

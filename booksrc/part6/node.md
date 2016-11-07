@@ -34,6 +34,11 @@ node中有三种模块
 npm install express
 ```
 
+安装cnpm
+``` bash
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+```
+
 #### 五、 package.json文件
 package.json文件简要说明
 ``` js

@@ -16,6 +16,7 @@ mkdir <folderName>    --创建一个名字为folderName的目录
 
 ``` bash
 git init              --仓库初始化（将本地的文件夹编程一个本地的git仓库）
+git clone             --克隆一个远程版本库
 git add               --将工作区的修改添加到暂存区
 git commit            --将暂存区的内容提交到分支上
 git push              --将本地仓库推送到远程仓库
