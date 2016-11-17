@@ -1,4 +1,4 @@
-## 第1节:变量、数据类型、运算符
+## 第1节:变量、数据类型
 
 #### 一、 变量
 上一章我们简单了解了什么是变量
@@ -38,29 +38,3 @@ var result = num1 + num2;
 console.log(result);   //程序会在控制台输出1020
 ```
 
-在两个文本框中分别输入两个数，点击“计算”按钮计算家和
-``` js
-$("button").click(function(){
-    var num1 = $("#num1").val();
-    var num2 = $("#num2").val();
-    var result = Number(num1) + Number(num2);
-    alert(result);
-})
-```
-
-#### 四、 逻辑运算:与(&&)、或(||)、非(！)
-``` js
-//与
-var result = true && true;  //true
-var result = true && false;  //false
-var result = false && true;  //false
-var result = false && false;  //false
-//或
-var result = true || true;  //true
-var result = true || false;  //true
-var result = false || true;  //true
-var result = false || false;  //false
-//非
-var result = !true           //false
-var result = !false          //true
-```

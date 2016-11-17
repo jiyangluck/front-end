@@ -45,4 +45,9 @@ function getRandom(){
 alert(getRandom());
 ```
 
+#### 五、日期和时间对象
+``` js
+var dateNow = new Date();
+```
+
 
