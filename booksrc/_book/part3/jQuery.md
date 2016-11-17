@@ -66,38 +66,10 @@ $("#pic").click(function(){
 })
 ```
 
-#### DEMO03-2-4:点击数字列表切换图片 [示例效果]()
-首先查看【示例效果】，完成这个实例需要了解下列知识点
+#### DEMO03-2-4:改变元素的文本节点
 
-**变量：**js通过var定义变量，变量可以理解为存储数据的容器。（关于变量，下一章有更详细的讲解）
 ``` js
-var str = "hello string"  //将hello world这个字符串存储到str这个变量中。
-//更准确的说是把字符串赋值给str “=”是赋值的意思，将右侧的值赋值给左侧的变量。
-```
-
-**数组：**数组是一个有序的集合。（关于数组，下一章有更详细的讲解）
-``` js
-var team = ["博小易","小博","小易"]; //把三个名字放到一个数组中，并复制给team这个变量
-team[0];  //第一个元素
-```
-
-图片切换的核心代码如下：
-``` js
-//定义一个数组，数组内存放所有所有图片的url
-var imgList = [
-    "../images/0.jpg",
-    "../images/1.jpg",
-    "../images/2.jpg",
-    "../images/3.jpg",
-    "../images/4.jpg"
-]
-
-//定义点击事件
-$("#num-list li").click(function(){
-    var index = $(this).index();  //获取点击的那个li的索引值
-    var src = imgList[index];     //通过索引值获取数组中对应的图片url
-    $("#pic").attr("src",src);    //修改img标签的url
+$("#txt").click(function(){
+    $(this).text("hello")
 })
 ```
-
-

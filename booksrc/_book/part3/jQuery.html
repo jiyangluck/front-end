@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="demo.html" />
+    <link rel="next" href="../part4/" />
     
     
     <link rel="prev" href="js.html" />
@@ -336,19 +336,6 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="demo.html">
-            
-                <a href="demo.html">
-            
-                    
-                    3-3-jQuery案例
-            
-                </a>
-            
-
-            
-        </li>
-    
 
             </ul>
             
@@ -412,7 +399,7 @@
                 <a href="../part4/array.html">
             
                     
-                    4-4-日期和数学对象
+                    4-4-数组
             
                 </a>
             
@@ -775,31 +762,9 @@ $(<span class="hljs-string">&quot;element&quot;</span>)  <span class="hljs-comme
     $(<span class="hljs-keyword">this</span>).attr(<span class="hljs-string">&quot;src&quot;</span>,<span class="hljs-string">&quot;&#x53E6;&#x4E00;&#x5F20;&#x56FE;&#x7247;url&quot;</span>);
 })
 </code></pre>
-<h4 id="demo03-2-4&#x70B9;&#x51FB;&#x6570;&#x5B57;&#x5217;&#x8868;&#x5207;&#x6362;&#x56FE;&#x7247;-&#x793A;&#x4F8B;&#x6548;&#x679C;">DEMO03-2-4:&#x70B9;&#x51FB;&#x6570;&#x5B57;&#x5217;&#x8868;&#x5207;&#x6362;&#x56FE;&#x7247; <a href="">&#x793A;&#x4F8B;&#x6548;&#x679C;</a></h4>
-<p>&#x9996;&#x5148;&#x67E5;&#x770B;&#x3010;&#x793A;&#x4F8B;&#x6548;&#x679C;&#x3011;&#xFF0C;&#x5B8C;&#x6210;&#x8FD9;&#x4E2A;&#x5B9E;&#x4F8B;&#x9700;&#x8981;&#x4E86;&#x89E3;&#x4E0B;&#x5217;&#x77E5;&#x8BC6;&#x70B9;</p>
-<p><strong>&#x53D8;&#x91CF;&#xFF1A;</strong>js&#x901A;&#x8FC7;var&#x5B9A;&#x4E49;&#x53D8;&#x91CF;&#xFF0C;&#x53D8;&#x91CF;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x5B58;&#x50A8;&#x6570;&#x636E;&#x7684;&#x5BB9;&#x5668;&#x3002;&#xFF08;&#x5173;&#x4E8E;&#x53D8;&#x91CF;&#xFF0C;&#x4E0B;&#x4E00;&#x7AE0;&#x6709;&#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x8BB2;&#x89E3;&#xFF09;</p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> str = <span class="hljs-string">&quot;hello string&quot;</span>  <span class="hljs-comment">//&#x5C06;hello world&#x8FD9;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x5B58;&#x50A8;&#x5230;str&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x4E2D;&#x3002;</span>
-<span class="hljs-comment">//&#x66F4;&#x51C6;&#x786E;&#x7684;&#x8BF4;&#x662F;&#x628A;&#x5B57;&#x7B26;&#x4E32;&#x8D4B;&#x503C;&#x7ED9;str &#x201C;=&#x201D;&#x662F;&#x8D4B;&#x503C;&#x7684;&#x610F;&#x601D;&#xFF0C;&#x5C06;&#x53F3;&#x4FA7;&#x7684;&#x503C;&#x8D4B;&#x503C;&#x7ED9;&#x5DE6;&#x4FA7;&#x7684;&#x53D8;&#x91CF;&#x3002;</span>
-</code></pre>
-<p><strong>&#x6570;&#x7EC4;&#xFF1A;</strong>&#x6570;&#x7EC4;&#x662F;&#x4E00;&#x4E2A;&#x6709;&#x5E8F;&#x7684;&#x96C6;&#x5408;&#x3002;&#xFF08;&#x5173;&#x4E8E;&#x6570;&#x7EC4;&#xFF0C;&#x4E0B;&#x4E00;&#x7AE0;&#x6709;&#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x8BB2;&#x89E3;&#xFF09;</p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> team = [<span class="hljs-string">&quot;&#x535A;&#x5C0F;&#x6613;&quot;</span>,<span class="hljs-string">&quot;&#x5C0F;&#x535A;&quot;</span>,<span class="hljs-string">&quot;&#x5C0F;&#x6613;&quot;</span>]; <span class="hljs-comment">//&#x628A;&#x4E09;&#x4E2A;&#x540D;&#x5B57;&#x653E;&#x5230;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#xFF0C;&#x5E76;&#x590D;&#x5236;&#x7ED9;team&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;</span>
-team[<span class="hljs-number">0</span>];  <span class="hljs-comment">//&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;</span>
-</code></pre>
-<p>&#x56FE;&#x7247;&#x5207;&#x6362;&#x7684;&#x6838;&#x5FC3;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
-<pre><code class="lang-js"><span class="hljs-comment">//&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x6570;&#x7EC4;&#x5185;&#x5B58;&#x653E;&#x6240;&#x6709;&#x6240;&#x6709;&#x56FE;&#x7247;&#x7684;url</span>
-<span class="hljs-keyword">var</span> imgList = [
-    <span class="hljs-string">&quot;../images/0.jpg&quot;</span>,
-    <span class="hljs-string">&quot;../images/1.jpg&quot;</span>,
-    <span class="hljs-string">&quot;../images/2.jpg&quot;</span>,
-    <span class="hljs-string">&quot;../images/3.jpg&quot;</span>,
-    <span class="hljs-string">&quot;../images/4.jpg&quot;</span>
-]
-
-<span class="hljs-comment">//&#x5B9A;&#x4E49;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;</span>
-$(<span class="hljs-string">&quot;#num-list li&quot;</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
-    <span class="hljs-keyword">var</span> index = $(<span class="hljs-keyword">this</span>).index();  <span class="hljs-comment">//&#x83B7;&#x53D6;&#x70B9;&#x51FB;&#x7684;&#x90A3;&#x4E2A;li&#x7684;&#x7D22;&#x5F15;&#x503C;</span>
-    <span class="hljs-keyword">var</span> src = imgList[index];     <span class="hljs-comment">//&#x901A;&#x8FC7;&#x7D22;&#x5F15;&#x503C;&#x83B7;&#x53D6;&#x6570;&#x7EC4;&#x4E2D;&#x5BF9;&#x5E94;&#x7684;&#x56FE;&#x7247;url</span>
-    $(<span class="hljs-string">&quot;#pic&quot;</span>).attr(<span class="hljs-string">&quot;src&quot;</span>,src);    <span class="hljs-comment">//&#x4FEE;&#x6539;img&#x6807;&#x7B7E;&#x7684;url</span>
+<h4 id="demo03-2-4&#x6539;&#x53D8;&#x5143;&#x7D20;&#x7684;&#x6587;&#x672C;&#x8282;&#x70B9;">DEMO03-2-4:&#x6539;&#x53D8;&#x5143;&#x7D20;&#x7684;&#x6587;&#x672C;&#x8282;&#x70B9;</h4>
+<pre><code class="lang-js">$(<span class="hljs-string">&quot;#txt&quot;</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    $(<span class="hljs-keyword">this</span>).text(<span class="hljs-string">&quot;hello&quot;</span>)
 })
 </code></pre>
 
@@ -834,7 +799,7 @@ $(<span class="hljs-string">&quot;#num-list li&quot;</span>).click(<span class="
                 </a>
                 
                 
-                <a href="demo.html" class="navigation navigation-next " aria-label="Next page: 3-3-jQuery案例">
+                <a href="../part4/" class="navigation navigation-next " aria-label="Next page: 第四章 javascript基础（一）">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -845,7 +810,7 @@ $(<span class="hljs-string">&quot;#num-list li&quot;</span>).click(<span class="
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3-2-jQuery入门","level":"1.5.2","depth":2,"next":{"title":"3-3-jQuery案例","level":"1.5.3","depth":2,"path":"part3/demo.md","ref":"part3/demo.md","articles":[]},"previous":{"title":"3-1-输出hello world","level":"1.5.1","depth":2,"path":"part3/js.md","ref":"part3/js.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part3/jQuery.md","mtime":"2016-11-03T01:10:39.268Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-03T02:54:14.737Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3-2-jQuery入门","level":"1.5.2","depth":2,"next":{"title":"第四章 javascript基础（一）","level":"1.6","depth":1,"path":"part4/README.md","ref":"part4/README.md","articles":[{"title":"4-1-变量与数据类型","level":"1.6.1","depth":2,"path":"part4/datatype.md","ref":"part4/datatype.md","articles":[]},{"title":"4-2-函数","level":"1.6.2","depth":2,"path":"part4/function.md","ref":"part4/function.md","articles":[]},{"title":"4-3-对象","level":"1.6.3","depth":2,"path":"part4/object.md","ref":"part4/object.md","articles":[]},{"title":"4-4-数组","level":"1.6.4","depth":2,"path":"part4/array.md","ref":"part4/array.md","articles":[]},{"title":"4-5-语句流","level":"1.6.5","depth":2,"path":"part4/flow.md","ref":"part4/flow.md","articles":[]}]},"previous":{"title":"3-1-输出hello world","level":"1.5.1","depth":2,"path":"part3/js.md","ref":"part3/js.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part3/jQuery.md","mtime":"2016-11-15T06:00:18.377Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-17T02:14:02.379Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -853,6 +818,10 @@ $(<span class="hljs-string">&quot;#num-list li&quot;</span>).click(<span class="
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
